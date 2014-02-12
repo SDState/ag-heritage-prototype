@@ -93,7 +93,7 @@
 					<li><a href="#">Museum Store</a></li>
 					<li><a href="#">Plan Your Visit</a></li>
 					<!-- <li class="divider"></li> -->
-					<li><label></label></li>					
+					<li><label></label></li>				
 					<!-- <li><label>Search</label></li> -->
 					<!-- <li class="has-button"><a class="small button" href="#">Search</a></li> -->
 					<li class="search"><form><input type="search" placeholder="Search"></form></li>
@@ -119,11 +119,47 @@
 				<br>
 				<!-- End Content Slider -->
 
+				<!-- Test Equalizer Component -->
+				<!-- <div class="row" data-equalizer="">
+				  <div class="medium-4 columns">
+				    <div class="panel" data-equalizer-watch>
+				      <h3>Panel 1</h3>
+				      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+				    </div>
+				  </div>
+				  <div class="medium-4 columns">
+				    <div class="callout panel" data-equalizer-watch>
+				      <h3>Panel 2</h3>
+				      <ul>
+				         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				         <li>Aliquam tincidunt mauris eu risus.</li>
+				         <li>Vestibulum auctor dapibus neque.</li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="medium-4 columns">
+				    <div class="panel" data-equalizer-watch>
+				      <h3>Panel 3</h3>
+				      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				    </div>
+				  </div>
+				</div>
+				
+				<div class="row" data-equalizer>
+				  <div class="large-6 columns panel" data-equalizer-watch>
+				    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				  </div>
+				  <div class="large-6 columns panel" data-equalizer-watch>
+				    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+				  </div>
+				</div> -->
+
+
 				<!-- Start Main Content -->
 				<div class="row" data-equalizer>
 					<!-- Left Column -->
-					<div class="large-4 medium-12 columns" data-equalizer-watch>
-						<div class="panel">
+					<div class="large-4 medium-12 columns">
+						<div class="panel" data-equalizer-watch>
 							<h4>
 								Admissions
 							</h4>
@@ -155,8 +191,8 @@
 					</div>
 					<!-- End Left Column -->
 					<!-- Middle Column -->
-					<div class="large-4 medium-6 columns" data-equalizer-watch>
-						<div class="panel">
+					<div class="large-4 medium-6 columns">
+						<div class="panel" data-equalizer-watch>
 							<h4>
 								Featured Event or News Story
 							</h4>
@@ -168,8 +204,8 @@
 					</div>
 					<!-- End Middle Column -->
 					<!-- Right Column -->
-					<div class="large-4 medium-6 columns" data-equalizer-watch>
-						<div class="panel">
+					<div class="large-4 medium-6 columns">
+						<div class="panel" data-equalizer-watch>
 							<h4>
 								Featured Artifact or Store Item
 							</h4>
@@ -238,19 +274,25 @@
 					<!-- End Left Column -->
 					<!-- Right Column (Social media and address information) -->
 					<div class="large-4 medium-4 small-12 columns">
-						<h4>
+						<!-- <h4>
 							Social Media Icons!
-						</h4>
-						<ul class="vcard panel right">
-							<li class="fn">Gaius Baltar</li>
-							<li class="street-address">123 Colonial Ave.</li>
-							<li class="locality">Caprica City</li>
+						</h4> -->
+						<div class="right"><img src="img/email.png" />
+												<img src="img/newsletter.png" />
+												<img src="img/blog.png" />
+												<img src="img/twitter.png" />
+												<img src="img/facebook.png" /></div>
+						<ul class="vcard panel">
+							<li class="fn">South Dakota Agricultural Heritage Museum</li>
+							<li class="street-address">925 11th Street</li>
+							<!-- <li class="locality">Brookings, SD 57007</li> -->
 							<li>
-								<span class="state">Caprica</span>, <span class="zip">12345</span>
+								<span class="state">South Dakota</span>, <span class="zip">57007</span>
 							</li>
-							<li class="email">
-								<a href="#">g.baltar@cmail.com</a>
-							</li>
+							<li class="number"><a href="tel:605-688-6226">605-688-6226</a></li>
+							<!-- <li class="email">
+								<a href="#">http://www.sdstate.edu/agmuseum/emailus.cfm</a>
+							</li> -->
 						</ul>
 					</div>
 					<!-- End Right Column -->
@@ -278,6 +320,7 @@
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation/foundation.js"></script>
 	<script src="js/foundation/foundation.dropdown.js"></script>
+	<script src="js/foundation/foundation.equalizer.js"></script>
 	<script src="js/foundation/foundation.interchange.js"></script>
 	<script src="js/foundation/foundation.orbit.js"></script>
 	<script src="js/foundation/foundation.offcanvas.js"></script>
