@@ -297,6 +297,7 @@ $agHeritageBorderRadius: 15px;
 
 // We use this to set the background color for the breadcrumb container.
 // $crumb-bg: scale-color($secondary-color, $lightness: 55%);
+ $crumb-bg: $mainContent;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
@@ -305,6 +306,7 @@ $agHeritageBorderRadius: 15px;
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
 // $crumb-border-size: 1px;
+ $crumb-border-size: 0;
 // $crumb-border-style: solid;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;

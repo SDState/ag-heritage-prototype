@@ -6,13 +6,15 @@
 .top-bar {
 	color: $white;
 	
-	form { background-color: $black; }
+	form { 
+		background-color: $black; 
+	}
 	input[type="search"] {
 		background-color: $lightGrey;
 		border: none;
 	}
 //	li {
-//		background-color: $mediumGrey;
+//		background-color: $mediumGrey; dsfsafs
 //	}
 }
 
@@ -35,62 +37,42 @@
 }
 
 #primary-navigation {
-//	padding-left: 4rem;
 	margin: 0 auto;
-}
-
-.title-area .name h1 a {
-//	font-family: "Times New Roman";
-	font-color: $lightTan;
-}
-
-.inline-list {
 	background-color: $darkTan;
 
-	a { color: $white; }
+	a { 
+		color: $white; 
+	}
 	&:hover,
 	&:focus { 
 		color: $white; 
 	}
 	li {
 		border-left: 1px solid $lightTan;
+		padding-left: 1.375rem;
 		
 		&:first-child {
 			border-left: none;
 		}
-	}
-//	li::before {
-//		color: $lightTan;
-//		content: ".";
-//	}
-//	li:first-child:before {
-//		content: none;
-//	}
-	li:hover,
-	li:focus {
-		background-color: $lightTan;
+//		&:hover,
+//		&:focus {
+//			background-color: $lightTan;
+//		}
 	}
 }
 
-//a {
-//  color: $anchor-font-color;
-//  text-decoration: $anchor-text-decoration;
-//  line-height: inherit;
-//
-//  &:hover,
-//  &:focus { color: $anchor-font-color-hover; }
-//
-//  img { border:none; }
-//}
+#page-title a {
+//	font-family: "Times New Roman";
+	font-color: $lightTan;
+}
 
-
-//@mixin inline-list {
-//	a { font-color: $white;}
-//}
-
-//.panel {
-//	border: none;
-//}
+#main-content {
+	background-color: $mainContent;
+	color: $black;
+}
+#left-navigation {
+	background-color: $leftNavigationBackgroundColor;
+}
 
 footer {
 	background-color: $black;
