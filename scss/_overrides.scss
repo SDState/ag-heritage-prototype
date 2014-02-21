@@ -1,0 +1,124 @@
+//
+// AG HERITAGE MUSEUM 
+// CUSTOM OVERRIDES
+//
+
+.top-bar {
+	color: $white;
+	
+	form { background-color: $black; }
+	input[type="search"] {
+		background-color: $lightGrey;
+		border: none;
+	}
+//	li {
+//		background-color: $mediumGrey;
+//	}
+}
+
+// #join-donate-contact
+#join-donate-contact {
+	background-color: $black;
+}
+#join-donate-contact li a {
+	background-color: $mediumGrey;
+}
+#join-donate-contact li:first-child a {
+	-webkit-border-bottom-left-radius: $agHeritageBorderRadius;
+	-moz-border-radius-bottomleft: $agHeritageBorderRadius;
+	border-bottom-left-radius: $agHeritageBorderRadius;
+}
+#join-donate-contact li:last-child a {
+	-webkit-border-bottom-right-radius: $agHeritageBorderRadius;
+	-moz-border-radius-bottomright: $agHeritageBorderRadius;
+	border-bottom-right-radius: $agHeritageBorderRadius;			
+}
+
+#primary-navigation {
+//	padding-left: 4rem;
+	margin: 0 auto;
+}
+
+.title-area .name h1 a {
+//	font-family: "Times New Roman";
+	font-color: $lightTan;
+}
+
+.inline-list {
+	background-color: $darkTan;
+
+	a { color: $white; }
+	&:hover,
+	&:focus { 
+		color: $white; 
+	}
+	li {
+		border-left: 1px solid $lightTan;
+		
+		&:first-child {
+			border-left: none;
+		}
+	}
+//	li::before {
+//		color: $lightTan;
+//		content: ".";
+//	}
+//	li:first-child:before {
+//		content: none;
+//	}
+	li:hover,
+	li:focus {
+		background-color: $lightTan;
+	}
+}
+
+//a {
+//  color: $anchor-font-color;
+//  text-decoration: $anchor-text-decoration;
+//  line-height: inherit;
+//
+//  &:hover,
+//  &:focus { color: $anchor-font-color-hover; }
+//
+//  img { border:none; }
+//}
+
+
+//@mixin inline-list {
+//	a { font-color: $white;}
+//}
+
+//.panel {
+//	border: none;
+//}
+
+footer {
+	background-color: $black;
+			
+	h4,
+	a,
+	a:hover,
+	a:focus {
+		color: $lightGrey;
+	}
+	.side-nav li a:not(.button) { 
+		color: $lightGrey; 
+	}
+}
+
+#address {
+	background-color: $mediumGrey;
+	border: none;
+	color: $white;
+//	margin-right: 0;
+	
+	a,
+	a:focus,
+	a:hover {
+		color: $white !important;
+	}	
+}
+
+#social-media-icons {
+	margin: 1rem 0;
+}
