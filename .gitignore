@@ -1,9 +1,7 @@
 .DS_Store
 .sass-cache/
 bower_components/
-build/assets/img
-build/assets/js
-build/assets/stylesheets
+build/assets/
 build/pages/
 node_modules/
 stylesheets/
