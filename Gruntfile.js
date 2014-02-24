@@ -1,8 +1,17 @@
-'use strict';
 module.exports = function( grunt ) {
-
+	'use strict';
 	grunt.initConfig({
 		pkg: grunt.file.readJSON( 'package.json' ),
+		assemble: {
+			options: {
+				layout: 'layouts/default.hbs'
+				// partials: ['includes/*.hbs'] // footer, ...
+			},
+			pages: {
+				src: ['pages/*.hbs'],
+				dest: 'build'
+			}
+		},
 		
 		// grunt-contrib-connect will serve the files of the project
     // on specified port and hostname
@@ -20,9 +29,10 @@ module.exports = function( grunt ) {
 	});
 	
   // Load npm plugins to provide necessary tasks.
+	grunt.loadNpmTasks( 'assemble' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['connect'] );
-	grunt.registerTask( 'serve', ['connect'] );
+  grunt.registerTask( 'default', ['assemble'] );
+	// grunt.registerTask( 'serve', ['connect'] );
 };

@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "latest",
-    "grunt-contrib-connect": "~0.6.0"
+    "grunt-contrib-connect": "~0.6.0",
+    "assemble": "^0.4.36"
   }
 }

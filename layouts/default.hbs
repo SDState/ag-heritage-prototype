@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title> 
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+		<div class="off-canvas-wrap">
+		  <div class="inner-wrap">
+			
+				<!-- First Row Navigation -->
+				<div class="contain-to-grid">
+					<nav class="top-bar hide-for-small" data-topbar>
+				
+						<section class="top-bar-section">
+							<ul id="join-donate-contact" class="right">
+								<!-- Top Navigation -->
+								<li><a href="#">Join</a></li>
+								<li><a href="#">Donate</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<!-- Search -->
+								<!-- <li class="search">
+									<form>
+										<input type="search" placeholder="Search">
+									</form>
+								</li> -->
+								<!-- <li class="has-button">
+									<a class="small button" href="#">Search</a>
+								</li> -->
+							</ul>
+						</section>
+		
+					</nav>
+				</div>
+				
+				<div class="contain-to-grid">				
+					<nav class="top-bar hide-for-small" data-topbar>
+					
+						<ul class="title-area">
+							<!-- Title Area -->
+							<!-- logo will go here -->
+							<li class="name">
+								<h1 id="page-title"><a href="#">South Dakota Agricultural Heritage Museum</a></h1>
+							</li>
+						</ul>
+					
+						<section class="top-bar-section">
+							<ul class="right">					
+								<li class="search">
+									<form>
+										<input type="search" placeholder="Search">
+									</form>
+								</li>
+							</ul>					
+						</section>				
+					</nav>
+				</div>			
+				<!-- Second Row (Main) Navigation -->
+					<ul id="primary-navigation" class="inline-list hide-for-small">
+						<!-- Primary Navigation -->
+						<li><a href="#">About</a></li>
+						<li><a href="#">Museum Collections</a></li>
+						<li><a href="#">Educators</a></li>
+						<li><a href="#">News &amp; Events</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Museum Store</a></li>
+						<li><a href="#">Plan Your Visit</a></li>
+					</ul>
+
+				<nav class="tab-bar show-for-small">			
+				
+					<section class="right-small">
+						<a class="right-off-canvas-toggle menu-icon"><span></span></a>
+					</section>
+
+					<section class="tab-bar-section">
+						<h1 class="title">South Dakota Agricultural Heritage Museum</h1>
+					</section>
+								
+				</nav>
+		  
+			  <!-- Off Canvas Menu -->
+		    <aside class="right-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<!-- <li><label>Audience</label></li> -->
+						<li><a href="#">Join</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<!-- <li class="divider"></li> -->
+						<li><label></label></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Museum Collections</a></li>
+						<li><a href="#">Educators</a></li>
+						<li><a href="#">News &amp; Events</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Museum Store</a></li>
+						<li><a href="#">Plan Your Visit</a></li>
+						<!-- <li class="divider"></li> -->
+						<li><label></label></li>				
+						<!-- <li><label>Search</label></li> -->
+						<!-- <li class="has-button"><a class="small button" href="#">Search</a></li> -->
+						<li class="search"><form><input type="search" placeholder="Search"></form></li>
+						<!-- <li class="divider"></li> -->
+					</ul>
+		    </aside>
+
+		    <section class="main-section">
+					<!-- Main content begins here -->
+					{{> body}}
+				</section>
+				<!-- Close main content -->
+
+			  <!-- close the off-canvas menu -->
+			  <a class="exit-off-canvas"></a>
+
+		  </div>
+			<!-- Close .off-canvas-wrap -->
+
+		</div>
+		<!-- Closes .inner-wrap -->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

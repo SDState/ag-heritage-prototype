@@ -1,125 +1,117 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>South Dakota Agricultural Heritage Museum</title>
-	<link rel="stylesheet" href="css/foundation.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title> 
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
 
-	<link rel="stylesheet" href="foundation-icons.css" /> <!-- icon stuff -->
-
-	<script src="js/vendor/modernizr.js"></script>
-</head>
-<body>
-
-	<!-- Navigation -->
-	<nav class="top-bar" data-topbar>
-		<ul class="title-area">
-			<!-- Title Area -->
-			<li class="name">
-				<h1>
-					<a href="#">
-						South Dakota Agricultural Heritage Museum
-					</a>
-				</h1>
-			</li>
-			<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-		</ul>
-
-		<section class="top-bar-section">
-			<!-- Right Nav Section -->
-			<ul class="right">
-				<li class="divider"></li>
-				<li class="has-dropdown">
-					<a href="#">Main Item 1</a>
-					<ul class="dropdown">
-						<li><label>Section Name</label></li>
-						<li class="has-dropdown">
-							<a href="#" class="">Has Dropdown, Level 1</a>
-							<ul class="dropdown">
-								<li><a href="#">Dropdown Options</a></li>
-								<li><a href="#">Dropdown Options</a></li>
-								<li><a href="#">Level 2</a></li>
-								<li><a href="#">Subdropdown Option</a></li>
-								<li><a href="#">Subdropdown Option</a></li>
-								<li><a href="#">Subdropdown Option</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Dropdown Option</a></li>
-						<li><a href="#">Dropdown Option</a></li>
-						<!-- <li class="divider"></li> -->
-						<li><label>Section Name</label></li>
-						<li><a href="#">Dropdown Option</a></li>
-						<li><a href="#">Dropdown Option</a></li>
-						<li><a href="#">Dropdown Option</a></li>
-						<li class="divider"></li>
-						<li><a href="#">See all →</a></li>
-					</ul>		
-				</li>
-
-
-				<li class="divider"></li>
-				<!-- <li><a href="#">Main Item 2</a></li> -->
+		<div class="off-canvas-wrap">
+		  <div class="inner-wrap">
+			
+				<!-- First Row Navigation -->
+				<div class="contain-to-grid">
+					<nav class="top-bar hide-for-small" data-topbar>
 				
-				<li class="has-form">
-				  <div class="row collapse">
-				    <div class="large-8 small-9 columns">
-				      <input type="text" placeholder="Find Stuff">
-				    </div>
-				    <div class="large-4 small-3 columns">
-				      <a href="#" class="alert button expand">Search</a>
-				    </div>
-				  </div>
-				</li>
-				<br>
+						<section class="top-bar-section">
+							<ul id="join-donate-contact" class="right">
+								<!-- Top Navigation -->
+								<li><a href="#">Join</a></li>
+								<li><a href="#">Donate</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<!-- Search -->
+								<!-- <li class="search">
+									<form>
+										<input type="search" placeholder="Search">
+									</form>
+								</li> -->
+								<!-- <li class="has-button">
+									<a class="small button" href="#">Search</a>
+								</li> -->
+							</ul>
+						</section>
+		
+					</nav>
+				</div>
+				
+				<div class="contain-to-grid">				
+					<nav class="top-bar hide-for-small" data-topbar>
+					
+						<ul class="title-area">
+							<!-- Title Area -->
+							<!-- logo will go here -->
+							<li class="name">
+								<h1 id="page-title"><a href="#">South Dakota Agricultural Heritage Museum</a></h1>
+							</li>
+						</ul>
+					
+						<section class="top-bar-section">
+							<ul class="right">					
+								<li class="search">
+									<form>
+										<input type="search" placeholder="Search">
+									</form>
+								</li>
+							</ul>					
+						</section>				
+					</nav>
+				</div>			
+				<!-- Second Row (Main) Navigation -->
+					<ul id="primary-navigation" class="inline-list hide-for-small">
+						<!-- Primary Navigation -->
+						<li><a href="#">About</a></li>
+						<li><a href="#">Museum Collections</a></li>
+						<li><a href="#">Educators</a></li>
+						<li><a href="#">News &amp; Events</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Museum Store</a></li>
+						<li><a href="#">Plan Your Visit</a></li>
+					</ul>
 
-		</section>
-	</nav>
-	<!-- End Top Bar -->
+				<nav class="tab-bar show-for-small">			
+				
+					<section class="right-small">
+						<a class="right-off-canvas-toggle menu-icon"><span></span></a>
+					</section>
 
-	<nav class="top-bar" data-topbar>
-		  <ul class="title-area">
-		    <li class="name">
-		      <h1><a href="#">My Site</a></h1>
-		    </li>
-		    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-		  </ul>
+					<section class="tab-bar-section">
+						<h1 class="title">South Dakota Agricultural Heritage Museum</h1>
+					</section>
+								
+				</nav>
+		  
+			  <!-- Off Canvas Menu -->
+		    <aside class="right-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<!-- <li><label>Audience</label></li> -->
+						<li><a href="#">Join</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<!-- <li class="divider"></li> -->
+						<li><label></label></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Museum Collections</a></li>
+						<li><a href="#">Educators</a></li>
+						<li><a href="#">News &amp; Events</a></li>
+						<li><a href="#">Get Involved</a></li>
+						<li><a href="#">Museum Store</a></li>
+						<li><a href="#">Plan Your Visit</a></li>
+						<!-- <li class="divider"></li> -->
+						<li><label></label></li>				
+						<!-- <li><label>Search</label></li> -->
+						<!-- <li class="has-button"><a class="small button" href="#">Search</a></li> -->
+						<li class="search"><form><input type="search" placeholder="Search"></form></li>
+						<!-- <li class="divider"></li> -->
+					</ul>
+		    </aside>
 
-		  <section class="top-bar-section">
-		    <!-- Right Nav Section -->
-		    <ul class="right">
-		      <li class="active"><a href="#">Right Button Active</a></li>
-		      <li class="has-dropdown">
-		        <a href="#">Right Button with Dropdown</a>
-		        <ul class="dropdown">
-		          <li><a href="#">First link in dropdown</a></li>
-		        </ul>
-		      </li>
-		    </ul>
+		    <section class="main-section">
+					<!-- Main content begins here -->
+					<!-- Main content begins here -->
 
-		    <!-- Left Nav Section -->
-		    <ul class="left">
-		      <li><a href="#">Left Nav Button</a></li>
-		    </ul>
-		  </section>
-		</nav>
-
-	
-	<br>
-
-	
-
-<!-- 
-	<div class = "row">
-		<div class = large-4 medium-4 colums">
-			<ul class="side-nav">
-			  <li><a href="#">Link 1</a></li>
-			  <li><a href="#">Link 2</a></li>
-			  <li><a href="#">Link 3</a></li>
-			  <li><a href="#">Link 4</a></li>
-			</ul>
-		</div>
-	</div> -->
 		
 <div class = "row" data-equalizer>
 
@@ -275,22 +267,26 @@
 			</div>
 		</div>
 		<!-- End Copyright -->
-	</footer> </div>
+	</footer>
 	<!-- End Footer -->
+	<!-- End Footer -->
+
+	<!-- Main content ends here -->
 	
-	<!-- JavaScript components -->
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/foundation/foundation.js"></script>
+				</section>
+				<!-- Close main content -->
 
-	<script src="js/foundation/foundation.equalizer.js"></script>
+			  <!-- close the off-canvas menu -->
+			  <a class="exit-off-canvas"></a>
 
-	<script src="js/foundation/foundation.dropdown.js"></script>
-	<script src="js/foundation/foundation.interchange.js"></script>
-	<script src="js/foundation/foundation.orbit.js"></script>
-	
-	<script>
-	$(document).foundation();
-	</script>
+		  </div>
+			<!-- Close .off-canvas-wrap -->
 
-</body>
+		</div>
+		<!-- Closes .inner-wrap -->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
