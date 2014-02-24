@@ -4,35 +4,39 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		assemble: {
 			options: {
+				assets: 'build/assets',
 				layout: 'layouts/default.hbs'
 				// partials: ['includes/*.hbs'] // footer, ...
 			},
 			pages: {
+				// files: {
+				// 	'build/': ['pages/*.hbs']
+				// }
+				// 	{src: 'pages/homepage.hbs', dest: 'build/homepage.html'},
+				// 	{src: 'pages/secondaryPage_1-column.hbs', dest: 'build/secondaryPage_1-column.html'},
+				// 	{src: 'pages/secondaryPage_2-column.hbs', dest: 'build/secondaryPage_2-column.html'}
+				// ]
+				// cwd: 'pages/',
+				// src: '*.hbs',
 				src: ['pages/*.hbs'],
-				dest: 'build'
+				dest: 'build/',
+				// flatten: true
 			}
 		},
-		
-		// grunt-contrib-connect will serve the files of the project
-    // on specified port and hostname
-    connect: {
-      all: {
-        options:{
-          // port: 9000,
-          // hostname: "0.0.0.0",
-          // Prevents Grunt to close just after the task (starting the server) completes
-          // This will be removed later as `watch` will take care of that
-          keepalive: true
-        }
-      }
-    }
+		copy: {
+			main: {
+				src: 'stylesheets/app.css',
+				dest: 'build/assets/stylesheets/app.css'
+			},
+		},
 	});
 	
   // Load npm plugins to provide necessary tasks.
 	grunt.loadNpmTasks( 'assemble' );
-	grunt.loadNpmTasks( 'grunt-contrib-connect' );
+	grunt.loadNpmTasks( 'grunt-contrib-copy' );
+	// grunt.loadNpmTasks( 'grunt-contrib-connect' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['assemble'] );
+  grunt.registerTask( 'default', ['assemble', 'copy'] );
 	// grunt.registerTask( 'serve', ['connect'] );
 };

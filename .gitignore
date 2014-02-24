@@ -1,6 +1,10 @@
 .DS_Store
-node_modules/
-bower_components/
 .sass-cache/
+bower_components/
+build/assets/img
+build/assets/js
+build/assets/stylesheets
+build/pages/
+node_modules/
 stylesheets/
 TODO
