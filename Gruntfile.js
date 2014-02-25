@@ -1,5 +1,14 @@
+'use strict';
 module.exports = function( grunt ) {
-	'use strict';
+	
+	// var LIVERELOAD_PORT = 35729,
+	//     lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT }),
+	//     livereloadMiddleware = function (connect, options) {
+	// 			return [
+	// 				lrSnippet, connect.static(options.base), connect.directory(options.base)
+	// 		];
+	// };
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON( 'package.json' ),
 		assemble: {
@@ -18,19 +27,17 @@ module.exports = function( grunt ) {
 		connect: {
 			all: {
 				options: {
-					// port: 9000,
-					// hostname: '0.0.0.0'
+					port: 9000,
+					// base: 'build',
+					hostname: '0.0.0.0',
 					keepalive: true
 				}
-			},
-			// livereload: {
+			}, 
+			// client: {
 			// 	options: {
-			// 		middleware: function( connect ) {
-			// 			return [
-			// 				lrSnippet,
-			// 				mountFolder(connect, './')
-			// 			];
-			// 		}
+			// 		port: 9000,
+			// 		base: 'build',
+			// 		middleware: livereloadMiddleware
 			// 	}
 			// }
 		},
@@ -54,36 +61,40 @@ module.exports = function( grunt ) {
 			}
 		},
 		open: {
-			server: {
-				url: 'http://localhost:<%= connect.options.port %>'
+			all: {
+				url: 'http://localhost:<%= connect.all.options.port %>'
 			}
 		}, 
 		watch: {
+			// client: {
+			// 	files: ['build/**/*'],
+			// 	tasks: [],
+			// 	options: {
+			// 		livereload: true
+			// 	}
+			// },
 			stylesheets: {
-				files: ['scss/'], 
-				tasks: ['compass'],
-				options: {
-					livereload: true
-				}
+				files: ['scss/*'], 
+				tasks: ['compass']
 			}, 
 			handlebars: {
 				files: ['pages/*', 'layouts/**'],
-				tasks: ['assemble'],
-				options: {
-					livereload: true
-				}
+				tasks: ['assemble']
 			}
 		}
 	});
 	
   // Load npm plugins to provide necessary tasks.
+	require('load-grunt-tasks')(grunt);
 	grunt.loadNpmTasks( 'assemble' );
-	grunt.loadNpmTasks( 'grunt-contrib-connect' );
-	grunt.loadNpmTasks( 'grunt-open' );
-	grunt.loadNpmTasks( 'grunt-contrib-compass' );
-	grunt.loadNpmTasks( 'grunt-contrib-copy' );
-	grunt.loadNpmTasks( 'grunt-contrib-watch' );
+	// grunt.loadNpmTasks( 'grunt-contrib-connect' );
+	// grunt.loadNpmTasks( 'grunt-open' );
+	// grunt.loadNpmTasks( 'grunt-contrib-compass' );
+	// grunt.loadNpmTasks( 'grunt-contrib-copy' );
+	// grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
   // Default task to be run.
   grunt.registerTask( 'default', ['compass', 'assemble'] );
+	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
+	grunt.registerTask( 'server', ['open', 'connect']);
 };
