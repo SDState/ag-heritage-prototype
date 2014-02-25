@@ -35,7 +35,17 @@ module.exports = function( grunt ) {
 			}
 		},
 		watch: {
-			
+			options: {
+				livereload: true
+			},
+			stylesheets: {
+				files: ['scss/'], 
+				tasks: ['compass']
+			}, 
+			handlebars: {
+				files: ['pages/*', 'layouts/**'],
+				tasks: ['assemble']
+			}
 		}
 	});
 	
