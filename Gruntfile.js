@@ -4,39 +4,47 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		assemble: {
 			options: {
-				assets: 'build/assets',
-				layout: 'layouts/default.hbs'
-				// partials: ['includes/*.hbs'] // footer, ...
+				assets: 'bower_components',
+				layout: 'layouts/default.hbs',
+				partials: ['layouts/partials/*.hbs'] // footer, ...
 			},
 			pages: {
-				// files: {
-				// 	'build/': ['pages/*.hbs']
-				// }
-				// 	{src: 'pages/homepage.hbs', dest: 'build/homepage.html'},
-				// 	{src: 'pages/secondaryPage_1-column.hbs', dest: 'build/secondaryPage_1-column.html'},
-				// 	{src: 'pages/secondaryPage_2-column.hbs', dest: 'build/secondaryPage_2-column.html'}
-				// ]
-				// cwd: 'pages/',
-				// src: '*.hbs',
-				src: ['pages/*.hbs'],
-				dest: 'build/',
-				// flatten: true
+				expand: true,
+				cwd: 'pages',
+				src: ['*.hbs'],
+				dest: 'build/'
+			}
+		},
+		compass: {
+			options: {
+				cssDir: 'build/stylesheets',
+				imagesDir: 'images',
+				importPath: 'bower_components/foundation/scss',
+				javascriptsDir: 'javascripts',
+				sassDir: 'scss'
+			},
+			compile: {
+				src: 'scss/',
+				dest: 'build/stylesheets/'
 			}
 		},
 		copy: {
-			main: {
-				src: 'stylesheets/app.css',
-				dest: 'build/assets/stylesheets/app.css'
-			},
+			assets: {
+				// src: 'stylesheets/app.css',
+				// dest: 'build/assets/stylesheets/app.css'
+			}
 		},
+		watch: {
+			
+		}
 	});
 	
   // Load npm plugins to provide necessary tasks.
 	grunt.loadNpmTasks( 'assemble' );
+	grunt.loadNpmTasks( 'grunt-contrib-compass' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
-	// grunt.loadNpmTasks( 'grunt-contrib-connect' );
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['assemble', 'copy'] );
-	// grunt.registerTask( 'serve', ['connect'] );
+  grunt.registerTask( 'default', ['compass', 'assemble'] );
 };
