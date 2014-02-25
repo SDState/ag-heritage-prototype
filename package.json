@@ -6,10 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "latest",
-    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-connect": "^0.7.0",
     "assemble": "^0.4.36",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-compass": "^0.7.2",
-    "grunt-contrib-watch": "^0.5.3"
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-open": "^0.2.3"
   }
 }

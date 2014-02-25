@@ -15,6 +15,25 @@ module.exports = function( grunt ) {
 				dest: 'build/'
 			}
 		},
+		connect: {
+			all: {
+				options: {
+					// port: 9000,
+					// hostname: '0.0.0.0'
+					keepalive: true
+				}
+			},
+			// livereload: {
+			// 	options: {
+			// 		middleware: function( connect ) {
+			// 			return [
+			// 				lrSnippet,
+			// 				mountFolder(connect, './')
+			// 			];
+			// 		}
+			// 	}
+			// }
+		},
 		compass: {
 			options: {
 				cssDir: 'build/stylesheets',
@@ -34,23 +53,33 @@ module.exports = function( grunt ) {
 				// dest: 'build/assets/stylesheets/app.css'
 			}
 		},
+		open: {
+			server: {
+				url: 'http://localhost:<%= connect.options.port %>'
+			}
+		}, 
 		watch: {
-			options: {
-				livereload: true
-			},
 			stylesheets: {
 				files: ['scss/'], 
-				tasks: ['compass']
+				tasks: ['compass'],
+				options: {
+					livereload: true
+				}
 			}, 
 			handlebars: {
 				files: ['pages/*', 'layouts/**'],
-				tasks: ['assemble']
+				tasks: ['assemble'],
+				options: {
+					livereload: true
+				}
 			}
 		}
 	});
 	
   // Load npm plugins to provide necessary tasks.
 	grunt.loadNpmTasks( 'assemble' );
+	grunt.loadNpmTasks( 'grunt-contrib-connect' );
+	grunt.loadNpmTasks( 'grunt-open' );
 	grunt.loadNpmTasks( 'grunt-contrib-compass' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
