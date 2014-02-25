@@ -66,6 +66,14 @@
 	font-color: $lightTan;
 }
 
+#homepage-main-content {
+	background-color: $mediumGrey;
+	
+	.panel {
+		margin-top: 0.9375rem;
+	}
+}
+
 #main-content {
 	background-color: $mainContent;
 	color: $black;
@@ -74,9 +82,14 @@
 	background-color: $leftNavigationBackgroundColor;
 }
 
+
+#footer-wrapper {background-color: $mediumGrey;}
 footer {
 	background-color: $black;
-			
+	
+	.columns, .panel {
+//		border: none;
+	}		
 	h4,
 	a,
 	a:hover,
@@ -92,7 +105,8 @@ footer {
 	background-color: $mediumGrey;
 	border: none;
 	color: $white;
-//	margin-right: 0;
+	margin-right: -0.9375rem;
+//	z-index: 1000;
 	
 	a,
 	a:focus,
