@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function( grunt ) {
-	
+
 	// var LIVERELOAD_PORT = 35729,
 	//     lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT }),
 	//     livereloadMiddleware = function (connect, options) {
@@ -11,6 +11,7 @@ module.exports = function( grunt ) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON( 'package.json' ),
+
 		assemble: {
 			options: {
 				assets: 'bower_components',
@@ -24,6 +25,7 @@ module.exports = function( grunt ) {
 				dest: 'build/'
 			}
 		},
+
 		connect: {
 			all: {
 				options: {
@@ -32,7 +34,7 @@ module.exports = function( grunt ) {
 					hostname: '0.0.0.0',
 					keepalive: true
 				}
-			}, 
+			},
 			// client: {
 			// 	options: {
 			// 		port: 9000,
@@ -41,6 +43,7 @@ module.exports = function( grunt ) {
 			// 	}
 			// }
 		},
+
 		compass: {
 			options: {
 				cssDir: 'build/stylesheets',
@@ -54,17 +57,20 @@ module.exports = function( grunt ) {
 				dest: 'build/stylesheets/'
 			}
 		},
+
 		copy: {
 			assets: {
 				// src: 'stylesheets/app.css',
 				// dest: 'build/assets/stylesheets/app.css'
 			}
 		},
+
 		open: {
 			all: {
 				url: 'http://localhost:<%= connect.all.options.port %>'
 			}
-		}, 
+		},
+
 		watch: {
 			// client: {
 			// 	files: ['build/**/*'],
@@ -74,16 +80,16 @@ module.exports = function( grunt ) {
 			// 	}
 			// },
 			stylesheets: {
-				files: ['scss/*'], 
+				files: ['scss/*'],
 				tasks: ['compass']
-			}, 
+			},
 			handlebars: {
 				files: ['pages/*', 'layouts/**'],
 				tasks: ['assemble']
 			}
 		}
 	});
-	
+
   // Load npm plugins to provide necessary tasks.
 	require('load-grunt-tasks')(grunt);
 	grunt.loadNpmTasks( 'assemble' );
