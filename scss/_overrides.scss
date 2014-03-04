@@ -1,13 +1,13 @@
 //
-// AG HERITAGE MUSEUM 
+// AG HERITAGE MUSEUM
 // CUSTOM OVERRIDES
 //
 
 .top-bar {
 	color: $white;
-	
-	form { 
-		background-color: $black; 
+
+	form {
+		background-color: $black;
 	}
 	input[type="search"] {
 		background-color: $lightGrey;
@@ -33,24 +33,24 @@
 #join-donate-contact li:last-child a {
 	-webkit-border-bottom-right-radius: $agHeritageBorderRadius;
 	-moz-border-radius-bottomright: $agHeritageBorderRadius;
-	border-bottom-right-radius: $agHeritageBorderRadius;			
+	border-bottom-right-radius: $agHeritageBorderRadius;
 }
 
 #primary-navigation {
 	margin: 0 auto;
 	background-color: $darkTan;
 
-	a { 
-		color: $white; 
+	a {
+		color: $white;
 	}
 	&:hover,
-	&:focus { 
-		color: $white; 
+	&:focus {
+		color: $white;
 	}
 	li {
 		border-left: 1px solid $lightTan;
 		padding-left: 1.375rem;
-		
+
 		&:first-child {
 			border-left: none;
 		}
@@ -66,9 +66,18 @@
 	font-color: $lightTan;
 }
 
+.right-off-canvas-menu {
+	background: $darkTan;
+	label {
+		background: $darkTan;
+		border-top: none !important;
+	}
+	input[type="search"] {margin: 0 0 0 0;}
+}
+
 #homepage-main-content {
 	background-color: $mediumGrey;
-	
+
 	.panel {
 		margin-top: 0.9375rem;
 	}
@@ -86,18 +95,18 @@
 #footer-wrapper {background-color: $mediumGrey;}
 footer {
 	background-color: $black;
-	
+
 	.columns, .panel {
 //		border: none;
-	}		
+	}
 	h4,
 	a,
 	a:hover,
 	a:focus {
 		color: $lightGrey;
 	}
-	.side-nav li a:not(.button) { 
-		color: $lightGrey; 
+	.side-nav li a:not(.button) {
+		color: $lightGrey;
 	}
 }
 
@@ -107,12 +116,12 @@ footer {
 	color: $white;
 	margin-right: -0.9375rem;
 //	z-index: 1000;
-	
+
 	a,
 	a:focus,
 	a:hover {
 		color: $white !important;
-	}	
+	}
 }
 
 #social-media-icons {

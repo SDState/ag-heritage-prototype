@@ -1,13 +1,14 @@
 // COLORS
-$white: #ffffff;
-$lightTan: #d5bb84;
-$darkTan: #b6985a;
-$lightGrey: #cfcec7;
-$mediumGrey: #a2a297;
-$darkGrey: #727265;
-$black: #4e4e42;
+$white:       #ffffff;
+$lightTan:    #d5bb84;
+$darkTan:     #b6985a;
+$lightGrey:   #cfcec7;
+$mediumGrey:  #a2a297;
+$darkGrey:    #727265;
+$black:       #4e4e42;
 $mainContent: #f3f3f1;
-$leftNavigationBackgroundColor: #87877c;
+$leftNavigationBackgroundColor:
+              #87877c;
 
 // BORDER RADIUS
 $agHeritageBorderRadius: 15px;
@@ -656,11 +657,13 @@ $agHeritageBorderRadius: 15px;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #FFF;
-// $tabbar-color: $black;
+$tabbar-color: $black;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
 // $tabbar-right-section-border: solid 1px scale-color($tabbar-bg, $lightness: 13%);
+// $tabbar-right-section-border: solid 1px scale-color($tabbar-bg, $lightness: 13%);
+// $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
 // $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
 
 // Off Canvas Tab Bar Headers
@@ -673,19 +676,23 @@ $agHeritageBorderRadius: 15px;
 // Off Canvas Menu Variables
 // $off-canvas-width: 250px;
 // $off-canvas-bg: #333;
+$off-canvas-bg: $darkTan;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
 // $off-canvas-label-color: #999;
+$off-canvas-label-color: $lightTan;
 // $off-canvas-label-text-transform: uppercase;
 // $off-canvas-label-font-weight: bold;
 // $off-canvas-label-bg: #444;
+$off-canvas-label-bg: $lightTan;
 // $off-canvas-label-border-top: 1px solid scale-color(#444, $lightness: 14%);
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
 // $off-canvas-link-color: rgba(#FFF, 0.7);
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
+$off-canvas-link-border-bottom: none;
 
 // Off Canvas Menu Icon Variables
 // $tabbar-menu-icon-color: #FFF;
