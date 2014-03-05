@@ -115,6 +115,7 @@ footer {
 	border: none;
 	color: $white;
 	margin-right: -0.9375rem;
+	margin-bottom: 0;
 //	z-index: 1000;
 
 	a,
@@ -126,4 +127,36 @@ footer {
 
 #social-media-icons {
 	margin: 1rem 0;
+	img {
+		// float: right;
+	}
+}
+
+#copyright {
+	color: $white;
+	background-color: $mediumGrey;
+	margin-bottom: 0;
+}
+
+// Small-sized screens only
+@media #{$screen} and (max-width: #{upper-bound($small-range)})
+{
+	footer .columns {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#social-media-icons, #address {
+		width: 100%;
+	}
+}
+
+// Medium-sized screens and up
+@media #{$screen} and (min-width:#{lower-bound($medium-range)}) {
+	#social-media-icons {
+		text-align: right !important;
+	}
+	#copyright {
+		background: $black;
+		color: $lightGrey;
+	}
 }
