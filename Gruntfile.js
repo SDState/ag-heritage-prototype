@@ -18,19 +18,25 @@ module.exports = function( grunt ) {
 				layout: 'layouts/default.hbs',
 				partials: ['layouts/partials/*.hbs'] // footer, ...
 			},
-			homepage: {
+			// homepage: {
+			// 	expand: true,
+			// 	cwd: 'pages',
+			// 	src: 'homepage.hbs',
+			// 	dest: 'build/'
+			// },
+			// subpages: {
+			// 	options: {
+			// 		layout: 'layouts/secondary-pages.hbs'
+			// 	},
+			// 	expand: true,
+			// 	cwd: 'pages',
+			// 	src: 'secondaryPage_*-column.hbs',
+			// 	dest: 'build/'
+			// }
+			pages: {
 				expand: true,
 				cwd: 'pages',
-				src: ['homepage.hbs'],
-				dest: 'build/'
-			},
-			subpages: {
-				options: {
-					layout: 'layouts/secondary-pages.hbs'
-				},
-				expand: true,
-				cwd: 'pages',
-				src: ['secondaryPage_*.html'],
+				src: ['*.hbs'],
 				dest: 'build/'
 			}
 		},
