@@ -6,6 +6,10 @@
 .top-bar {
 	color: $white;
 	height: 90px;
+	section {
+		// overflow: visible;
+		height: 90px;
+	}
 	section ul {
 		background: $black;
 		display: block;
@@ -23,7 +27,9 @@
 }
 
 #ag-heritage-seal {
-	// z-index: 10000;
+	z-index: 1000;
+	// overflow: visible;
+	// height: 200px;
 }
 
 // #join-donate-contact
@@ -53,9 +59,9 @@
 }
 
 #primary-navigation {
-	margin: 0 auto;
+	// clear:both;
+	margin-bottom: 0;
 	background-color: $darkTan;
-
 	a {
 		color: $white;
 	}
@@ -65,10 +71,12 @@
 	}
 	li {
 		border-left: 1px solid $lightTan;
-		padding-left: 1.375rem;
-
+		margin-left: 0;
+		margin-right: 0.5rem;
+		padding-left: 0.5rem;
 		&:first-child {
 			border-left: none;
+			margin-left: 6rem;
 		}
 //		&:hover,
 //		&:focus {
@@ -77,8 +85,12 @@
 	}
 }
 
+#primary-nav-wrapper {
+	background: $darkTan;
+}
+
 #page-title {
-	line-height: 1rem !important;
+	// line-height: 1rem !important;
 	a {
 	//	font-family: "Times New Roman";
 		font-color: $lightTan;
