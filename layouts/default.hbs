@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South Dakota Agricultural Heritage Museum</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="{{assets}}/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+		<div class="off-canvas-wrap">
+		  <div class="inner-wrap">
+
+        <div class="contain-to-grid">
+				<!-- First Row Navigation -->
+				{{> top-bar}}
+				<!-- Second Row (Main) Navigation -->
+				{{> primary-navigation}}
+        </div>
+
+				<!-- First and Second Row Navigation (for small screens) -->
+				{{> small-screen-navigation}}
+
+		    <section class="main-section">
+
+					<!-- Main content begins here -->
+					{{> body}}
+
+				</section> <!-- .main-section -->
+
+			  <!-- close the off-canvas menu -->
+			  <a class="exit-off-canvas"></a>
+
+		  </div> <!-- .off-canvas-wrap -->
+
+		</div> <!-- .inner-wrap -->
+
+    <script src="{{assets}}/jquery/dist/jquery.min.js"></script>
+    <script src="{{assets}}/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

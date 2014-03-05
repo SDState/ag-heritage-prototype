@@ -1,0 +1,162 @@
+//
+// AG HERITAGE MUSEUM
+// CUSTOM OVERRIDES
+//
+
+.top-bar {
+	color: $white;
+
+	form {
+		background-color: $black;
+	}
+	input[type="search"] {
+		background-color: $lightGrey;
+		border: none;
+	}
+//	li {
+//		background-color: $mediumGrey; dsfsafs
+//	}
+}
+
+// #join-donate-contact
+#join-donate-contact {
+	background-color: $black;
+}
+#join-donate-contact li a {
+	background-color: $mediumGrey;
+}
+#join-donate-contact li:first-child a {
+	-webkit-border-bottom-left-radius: $agHeritageBorderRadius;
+	-moz-border-radius-bottomleft: $agHeritageBorderRadius;
+	border-bottom-left-radius: $agHeritageBorderRadius;
+}
+#join-donate-contact li:last-child a {
+	-webkit-border-bottom-right-radius: $agHeritageBorderRadius;
+	-moz-border-radius-bottomright: $agHeritageBorderRadius;
+	border-bottom-right-radius: $agHeritageBorderRadius;
+}
+
+#primary-navigation {
+	margin: 0 auto;
+	background-color: $darkTan;
+
+	a {
+		color: $white;
+	}
+	&:hover,
+	&:focus {
+		color: $white;
+	}
+	li {
+		border-left: 1px solid $lightTan;
+		padding-left: 1.375rem;
+
+		&:first-child {
+			border-left: none;
+		}
+//		&:hover,
+//		&:focus {
+//			background-color: $lightTan;
+//		}
+	}
+}
+
+#page-title a {
+//	font-family: "Times New Roman";
+	font-color: $lightTan;
+}
+
+.right-off-canvas-menu {
+	background: $darkTan;
+	label {
+		background: $darkTan;
+		border-top: none !important;
+	}
+	input[type="search"] {margin: 0 0 0 0;}
+}
+
+#homepage-main-content {
+	background-color: $mediumGrey;
+
+	.panel {
+		margin-top: 0.9375rem;
+	}
+}
+
+#main-content {
+	background-color: $mainContent;
+	color: $black;
+}
+#left-navigation {
+	background-color: $leftNavigationBackgroundColor;
+}
+
+
+#footer-wrapper {background-color: $mediumGrey;}
+footer {
+	background-color: $black;
+
+	.columns, .panel {
+//		border: none;
+	}
+	h4,
+	a,
+	a:hover,
+	a:focus {
+		color: $lightGrey;
+	}
+	.side-nav li a:not(.button) {
+		color: $lightGrey;
+	}
+}
+
+#address {
+	background-color: $mediumGrey;
+	border: none;
+	color: $white;
+	margin-right: -0.9375rem;
+	margin-bottom: 0;
+//	z-index: 1000;
+
+	a,
+	a:focus,
+	a:hover {
+		color: $white !important;
+	}
+}
+
+#social-media-icons {
+	margin: 1rem 0;
+	img {
+		// float: right;
+	}
+}
+
+#copyright {
+	color: $white;
+	background-color: $mediumGrey;
+	margin-bottom: 0;
+}
+
+// Small-sized screens only
+@media #{$screen} and (max-width: #{upper-bound($small-range)})
+{
+	footer .columns {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#social-media-icons, #address {
+		width: 100%;
+	}
+}
+
+// Medium-sized screens and up
+@media #{$screen} and (min-width:#{lower-bound($medium-range)}) {
+	#social-media-icons {
+		text-align: right !important;
+	}
+	#copyright {
+		background: $black;
+		color: $lightGrey;
+	}
+}
