@@ -42,6 +42,7 @@
 
 	a {
 		color: $white;
+		text-transform:uppercase
 	}
 	&:hover,
 	&:focus {
@@ -160,3 +161,5 @@ footer {
 		color: $lightGrey;
 	}
 }
+
+
