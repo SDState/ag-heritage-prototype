@@ -1,4 +1,4 @@
-- [ ] Add 'small' class to copyright.
+- [x] Add 'small' class to copyright.
 - [ ] Colors used inside main content area.
 - [ ] Offset logo left and below.
 - [ ] Right border of contact section in footer sometimes draws a dark 1px border
