@@ -6,12 +6,12 @@ The markup in this project uses and includes Foundation 5.1. It has no external 
 ## Getting Started
 
 1. Clone the repo.
-2. Check out a new branch (off `master`) to begin your work.
-3. Run the following shell commands (if the condition applies):
+2. Run the following shell commands (if the condition applies):
   - `npm install -g grunt-cli` (if running `grunt -v` returns an error)
-  - `npm install` (if the assembling branch doesn't contain a node_modules directory)
   - `gem install compass` (if running `compass -v` returns an error)
-  - `bower install` (if the assembling branch doesn't contain a node_modules directory)
+  - `npm install` (if the assembling branch doesn't contain a node_modules directory)
+  - `bower install` (if the assembling branch doesn't contain a bower_modules directory)
+3. Check out a new branch (off `master`) to begin your work.
 4. Write code!
 5. Push your commits back to `master` once the feature is complete.
 
