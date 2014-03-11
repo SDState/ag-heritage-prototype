@@ -1,0 +1,20 @@
+- [x] Add 'small' class to copyright.
+- [x] Colors used inside main content area.
+- [ ] Offset logo left and below.
+- [ ] .page-title hovers the incorrect color
+- [ ] Right border of contact section in footer sometimes draws a dark 1px border
+- [ ] Remove watcher from secondar main-content columns
+- [ ] Fix border between slider and the the 3-column grid (on homepage).
+- [ ] Move slider dots into image and align to right.
+- [ ] Upgrade to Foundation 5.2.
+- [ ] Add image and bottom border to off-canvas (mobile) navigation.
+- [ ] Figure out why the slider doesn't always load properly (in terms of its height).
+- [ ] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
+- [ ] Increase height above headings in footer.
+- [ ] Search still lacks a button.
+- [ ] On small widths, title in off-canvas menu overruns menu buttom, preventing it from working (may be solved once title is styled properly).
+- [x] Set appropriate menu items to uppercase.
+- [ ] On secondary pages, headings should use the same color as the body copy.
+- [x] Write instructions for using the `grunt` tool to compile and/or view the site.
+- [ ] Combine Grunt `watch` and `server` tasks into a single command.
+- [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
