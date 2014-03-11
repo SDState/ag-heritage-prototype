@@ -1,13 +1,5 @@
-'use strict';
 module.exports = function( grunt ) {
-
-	// var LIVERELOAD_PORT = 35729,
-	//     lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT }),
-	//     livereloadMiddleware = function (connect, options) {
-	// 			return [
-	// 				lrSnippet, connect.static(options.base), connect.directory(options.base)
-	// 		];
-	// };
+	'use strict';
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON( 'package.json' ),
@@ -16,23 +8,8 @@ module.exports = function( grunt ) {
 			options: {
 				assets: 'bower_components',
 				layout: 'layouts/default.hbs',
-				partials: ['layouts/partials/*.hbs'] // footer, ...
+				partials: ['layouts/partials/*.hbs'] // footer, navigations, etc.
 			},
-			// homepage: {
-			// 	expand: true,
-			// 	cwd: 'pages',
-			// 	src: 'homepage.hbs',
-			// 	dest: 'build/'
-			// },
-			// subpages: {
-			// 	options: {
-			// 		layout: 'layouts/secondary-pages.hbs'
-			// 	},
-			// 	expand: true,
-			// 	cwd: 'pages',
-			// 	src: 'secondaryPage_*-column.hbs',
-			// 	dest: 'build/'
-			// }
 			pages: {
 				expand: true,
 				cwd: 'pages',
@@ -50,13 +27,6 @@ module.exports = function( grunt ) {
 					keepalive: true
 				}
 			},
-			// client: {
-			// 	options: {
-			// 		port: 9000,
-			// 		base: 'build',
-			// 		middleware: livereloadMiddleware
-			// 	}
-			// }
 		},
 
 		compass: {
@@ -87,13 +57,6 @@ module.exports = function( grunt ) {
 		},
 
 		watch: {
-			// client: {
-			// 	files: ['build/**/*'],
-			// 	tasks: [],
-			// 	options: {
-			// 		livereload: true
-			// 	}
-			// },
 			stylesheets: {
 				files: ['scss/*'],
 				tasks: ['compass']
@@ -117,5 +80,5 @@ module.exports = function( grunt ) {
   // Default task to be run.
   grunt.registerTask( 'default', ['compass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
-	grunt.registerTask( 'server', ['open', 'connect']);
+	grunt.registerTask( 'server', ['open', 'connect'] );
 };
