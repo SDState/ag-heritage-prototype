@@ -27,9 +27,12 @@
 }
 
 #ag-heritage-seal {
-	z-index: 1000;
+	// z-index: 1000;
 	// overflow: visible;
 	// height: 200px;
+	height: 9rem;
+	margin-left: -1.5rem;
+	// margin-bottom: -10px;
 }
 
 // #join-donate-contact
@@ -58,6 +61,12 @@
 	height: ($topbar-height/2) !important;
 }
 
+.main-section,
+#primary-nav-wrapper {
+	z-index: -1;
+	position:relative;
+}
+
 #primary-navigation {
 	// clear:both;
 	margin-bottom: 0;
@@ -76,7 +85,7 @@
 		padding-left: 0.5rem;
 		&:first-child {
 			border-left: none;
-			margin-left: 6rem;
+			margin-left: 7rem;
 		}
 //		&:hover,
 //		&:focus {
@@ -120,6 +129,9 @@
 }
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
+	li:first-child {
+		margin-top: 1rem;
+	}
 }
 
 
