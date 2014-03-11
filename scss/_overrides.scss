@@ -26,13 +26,18 @@
 //	}
 }
 
-#ag-heritage-seal {
+.top-bar-section #ag-heritage-seal {
 	// z-index: 1000;
 	// overflow: visible;
 	// height: 200px;
 	height: 9rem;
 	margin-left: -1.5rem;
 	// margin-bottom: -10px;
+}
+.tab-bar-section #ag-heritage-seal {
+	height: $tabbar-height - 0.25rem;
+	// height: $tabbar-height;
+	// padding: 0.25rem;
 }
 
 // #join-donate-contact
@@ -101,8 +106,17 @@
 #page-title {
 	// line-height: 1rem !important;
 	a {
-	//	font-family: "Times New Roman";
 		font-color: $lightTan;
+		&:hover {
+			background: $black;
+		}
+	}
+}
+
+.tab-bar h1.title {
+	line-height: 1.2rem;
+	a {
+		color: $lightGrey;
 	}
 }
 
@@ -134,6 +148,11 @@
 	}
 }
 
+.tab-bar {
+	border-bottom: 0.25rem solid $darkTan;
+	box-sizing: content-box;
+	// padding-bottom: 0.5rem;
+}
 
 #footer-wrapper {background-color: $mediumGrey;}
 footer {
