@@ -1,5 +1,5 @@
 - [x] Add 'small' class to copyright.
-- [ ] Colors used inside main content area.
+- [x] Colors used inside main content area.
 - [ ] Offset logo left and below.
 - [ ] Right border of contact section in footer sometimes draws a dark 1px border
 - [ ] Remove watcher from secondar main-content columns
@@ -12,7 +12,7 @@
 - [ ] Increase height above headings in footer.
 - [ ] Search still lacks a button.
 - [ ] On small widths, title in off-canvas menu overruns menu buttom, preventing it from working (may be solved once title is styled properly).
-- [ ] Set appropriate menu items to uppercase.
+- [x] Set appropriate menu items to uppercase.
 - [ ] On secondary pages, headings should use the same color as the body copy.
 - [x] Write instructions for using the `grunt` tool to compile and/or view the site.
 - [ ] Combine Grunt `watch` and `server` tasks into a single command.
