@@ -5,7 +5,6 @@
 
 .top-bar {
 	color: $white;
-
 	form {
 		background-color: $black;
 	}
@@ -39,10 +38,9 @@
 #primary-navigation {
 	margin: 0 auto;
 	background-color: $darkTan;
-
+	// text-transform:uppercase;
 	a {
 		color: $white;
-		text-transform:uppercase
 	}
 	&:hover,
 	&:focus {
@@ -62,9 +60,18 @@
 	}
 }
 
-#page-title a {
+#page-title,
+.title,
+#primary-navigation,
+#primary-navigation-mobile,
+.tab-bar .off-canvas-list {
+	text-transform:uppercase;
+}
+
+#page-title {
 //	font-family: "Times New Roman";
 	font-color: $lightTan;
+	// text-transform:uppercase;
 }
 
 .right-off-canvas-menu {
@@ -161,5 +168,3 @@ footer {
 		color: $lightGrey;
 	}
 }
-
-
