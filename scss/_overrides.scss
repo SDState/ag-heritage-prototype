@@ -55,6 +55,14 @@
 	height: ($topbar-height / 2) !important;
 }
 
+.orbit-bullets-container {
+	margin-top:-60px;
+	margin-right: 0.9375rem;
+	// .orbit-bullets {
+		// float: right;
+	// }
+}
+
 .main-section,
 #primary-nav-wrapper {
 	z-index: -1;

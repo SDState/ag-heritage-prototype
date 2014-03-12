@@ -8,8 +8,9 @@
 - [ ] Allow for seal's negative margin when window would crop it.
 - [x] Right border of contact section in footer sometimes draws a dark 1px border
 - [x] Remove watcher from secondar main-content columns
-- [ ] Fix border between slider and the the 3-column grid (on homepage).
-- [ ] Move slider dots into image and align to right.
+- [x] Fix border between slider and the the 3-column grid (on homepage).
+- [x] Move slider dots into image
+- [ ] Align slider dots to the right.
 - [ ] Upgrade to Foundation 5.2.
 - [x] Add image and bottom border to off-canvas (mobile) navigation.
 - [ ] Figure out why the slider doesn't always load properly (in terms of its height).
