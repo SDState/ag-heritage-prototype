@@ -127,14 +127,16 @@
 
 #homepage-main-content {
 	background-color: $mediumGrey;
-
 	.panel {
 		margin-top: 0.9375rem;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $darkTan;
 	}
 }
 
 #main-content {
-	background-color: $mainContent;
+	background-color: $mainContentColor;
 	color: $black;
 }
 #left-navigation {

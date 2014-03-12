@@ -6,7 +6,7 @@ $lightGrey:   #cfcec7;
 $mediumGrey:  #a2a297;
 $darkGrey:    #727265;
 $black:       #4e4e42;
-$mainContent: #f3f3f1;
+$mainContentColor: #f3f3f1;
 $leftNavigationBackgroundColor:
               #87877c;
 
@@ -135,7 +135,7 @@ $agHeritageBorderRadius: 15px;
 // $header-font-family: $body-font-family;
 // $header-font-weight: 300;
 // $header-font-style: normal;
- $header-font-color: $black;
+ $header-font-color: $darkTan;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -300,7 +300,7 @@ $agHeritageBorderRadius: 15px;
 
 // We use this to set the background color for the breadcrumb container.
 // $crumb-bg: scale-color($secondary-color, $lightness: 55%);
- $crumb-bg: $mainContent;
+ $crumb-bg: $mainContentColor;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
@@ -793,7 +793,7 @@ $off-canvas-link-border-bottom: none;
 
 // We use these to control the background and border styles
 // $panel-bg: scale-color(#fff, $lightness: -5%);
- $panel-bg: $lightGrey;
+ $panel-bg: $mainContentColor;
 // $panel-border-style: solid;
  $panel-border-style: none;
 // $panel-border-size: 1px;
