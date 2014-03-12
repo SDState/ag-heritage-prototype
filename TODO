@@ -1,13 +1,13 @@
 - [x] Add 'small' class to copyright.
 - [x] Colors used inside main content area.
 - [x] Offset logo left and below.
-- [ ] Change homepage content area to main content color.
-- [ ] Change homepage content headers to main header color.
+- [x] Change homepage content area to main content color.
+- [x] Change homepage content headers to main header color.
 - [x] .page-title hovers the incorrect color
 - [ ] Look into reducing font size (across the board) at medium size.
 - [ ] Allow for seal's negative margin when window would crop it.
-- [ ] Right border of contact section in footer sometimes draws a dark 1px border
-- [ ] Remove watcher from secondar main-content columns
+- [x] Right border of contact section in footer sometimes draws a dark 1px border
+- [x] Remove watcher from secondar main-content columns
 - [ ] Fix border between slider and the the 3-column grid (on homepage).
 - [ ] Move slider dots into image and align to right.
 - [ ] Upgrade to Foundation 5.2.
@@ -19,7 +19,7 @@
 - [x] On small widths, title in off-canvas menu overruns menu button, preventing it from working (may be solved once title is styled properly).
 - [x] On small widths, title should take two lines (as on desktop).
 - [x] Set appropriate menu items to uppercase.
-- [ ] On secondary pages, headings should use the same color as the body copy.
+- [-] On secondary pages, headings should use the same color as the body copy.
 - [x] Write instructions for using the `grunt` tool to compile and/or view the site.
 - [ ] Combine Grunt `watch` and `server` tasks into a single command.
 - [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
