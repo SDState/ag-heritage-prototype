@@ -19,6 +19,7 @@
 # Secondary Pages
 - [ ] Add a watcher to keep the page navigation and primary content area the same height.
 - [?] Headings should use the same color as the body copy.
+- [ ] Reverse side-nav and primary content colummns so the nav moves on small screens, not large one.
 
 # Page Navigation
 
