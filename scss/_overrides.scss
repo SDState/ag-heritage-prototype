@@ -102,6 +102,10 @@
 
 #page-title {
 	font-color: $lightTan;
+	a {
+	line-height: 30px;
+	color: $lightGrey;
+	}
 }
 #primary-nav-wrapper {
 	background: $darkTan;

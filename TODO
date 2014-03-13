@@ -1,26 +1,31 @@
-- [x] Add 'small' class to copyright.
-- [x] Colors used inside main content area.
-- [x] Offset logo left and below.
-- [x] Change homepage content area to main content color.
-- [x] Change homepage content headers to main header color.
-- [x] .page-title hovers the incorrect color
-- [ ] Look into reducing font size (across the board) at medium size.
+# Desktop Navigation
+- [ ] Move margin/padding from LI to UL so second line wraps to match the first.
 - [ ] Allow for seal's negative margin when window would crop it.
-- [x] Right border of contact section in footer sometimes draws a dark 1px border
-- [x] Remove watcher from secondar main-content columns
-- [x] Fix border between slider and the the 3-column grid (on homepage).
-- [x] Move slider dots into image
-- [ ] Align slider dots to the right.
-- [ ] Upgrade to Foundation 5.2.
-- [x] Add image and bottom border to off-canvas (mobile) navigation.
-- [ ] Figure out why the slider doesn't always load properly (in terms of its height).
-- [ ] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
-- [ ] Increase height above headings in footer.
+- [ ] Shrink the seal and set into top-bar on medium screens.
+- [ ] Add top padding above .page-title.
+
+# Mobile Navigation
+- [ ] List items should hover with an accent color.
+- [ ] White text.
+- [ ] Bottom HR spacing.
 - [ ] Search still lacks a button.
-- [x] On small widths, title in off-canvas menu overruns menu button, preventing it from working (may be solved once title is styled properly).
-- [x] On small widths, title should take two lines (as on desktop).
-- [x] Set appropriate menu items to uppercase.
-- [-] On secondary pages, headings should use the same color as the body copy.
-- [x] Write instructions for using the `grunt` tool to compile and/or view the site.
-- [ ] Combine Grunt `watch` and `server` tasks into a single command.
+- [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
+
+# Homepage
+- [ ] Align slider dots to the right.
+- [ ] Figure out why the slider doesn't always load properly (in terms of its height).
+- [ ] Change Orbit GUI elements to one of Niki's colors.
+
+# Secondary Pages
+- [ ] Add a watcher to keep the page navigation and primary content area the same height.
+- [?] Headings should use the same color as the body copy.
+
+# Page Navigation
+
+# General
+- [ ] Increase height above headings in footer.
+- [ ] Look into reducing font size (across the board) at medium size.
+
+# Tooling
 - [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
+- [ ] Combine Grunt `watch` and `server` tasks into a single command.
