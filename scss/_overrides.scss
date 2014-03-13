@@ -125,6 +125,8 @@
 
 .tab-bar h1.title {
 	line-height: 1.2rem;
+	padding-left: 0.5rem;
+	padding-top: 0.125rem;
 	a {
 		color: $lightGrey;
 	}
@@ -136,7 +138,16 @@
 		background: $darkTan;
 		border-top: none !important;
 	}
-	input[type="search"] {margin: 0 0 0 0;}
+	input[type="search"] {
+		margin: 0 0 0 0;
+	}
+}
+
+ul.off-canvas-list li a {
+	color: $white;
+	&:hover {
+		background: $lightTan;
+	}
 }
 
 #homepage-main-content {

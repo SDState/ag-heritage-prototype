@@ -1,13 +1,12 @@
 # Desktop Navigation
-- [ ] Move margin/padding from LI to UL so second line wraps to match the first.
-- [ ] Allow for seal's negative margin when window would crop it.
-- [ ] Shrink the seal and set into top-bar on medium screens.
-- [ ] Add top padding above .page-title.
+- [x] Move margin/padding from LI to UL so second line wraps to match the first.
+- [x] Shrink the seal and set into top-bar on medium screens.
+- [x] Add top padding above .page-title.
 
 # Mobile Navigation
-- [ ] List items should hover with an accent color.
-- [ ] White text.
-- [ ] Bottom HR spacing.
+- [x] List items should hover with an accent color.
+- [x] White text.
+- [x] Bottom HR spacing.
 - [ ] Search still lacks a button.
 - [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
 
