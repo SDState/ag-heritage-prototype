@@ -182,7 +182,9 @@ ul.off-canvas-list li a {
 }
 footer {
 	background-color: $black;
-
+	h4:first-child {
+		margin-top: 1.25rem;
+	}
 	.columns, .panel {
 //		border: none;
 	}
