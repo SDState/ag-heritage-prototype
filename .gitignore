@@ -1,5 +1,5 @@
 .DS_Store
 .sass-cache
-build
+*.html
 bower_components
 node_modules
