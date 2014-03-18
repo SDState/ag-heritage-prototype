@@ -17,7 +17,7 @@
 
 # Secondary Pages
 - [x] Add a watcher to keep the page navigation and primary content area the same height.
-- [ ] Reverse side-nav and primary content colummns so the nav moves on small screens, not large one.
+- [ ] Reverse side-nav and primary content columns so the nav moves on small screens, not large one.
 
 # Page Navigation
 
