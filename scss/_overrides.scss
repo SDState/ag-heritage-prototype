@@ -21,6 +21,7 @@
 		background-color: $lightGrey;
 		border: none;
 	}
+
 }
 
 .top-bar-section #ag-heritage-seal {
@@ -192,6 +193,7 @@ footer {
 	.columns, .panel {
 //		border: none;
 	}
+
 	h4,
 	a,
 	a:hover,
@@ -230,6 +232,9 @@ footer {
 	background-color: $mediumGrey;
 	margin-bottom: 0;
 }
+
+
+
 
 // Small-sized screens only
 @media #{$screen} and (max-width: #{upper-bound($small-range)})
