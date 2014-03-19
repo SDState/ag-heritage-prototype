@@ -150,10 +150,6 @@ ul.off-canvas-list li a {
 	}
 }
 
-.orbit-slide-number {
-	display: none;
-}
-
 #homepage-main-content {
 	background-color: $mediumGrey;
 	.panel {
@@ -168,6 +164,16 @@ ul.off-canvas-list li a {
 	background-color: $mainContentColor;
 	color: $black;
 }
+
+//.main-section > row > column
+.slider {
+	padding: 0;
+}
+
+.orbit-slide-number {
+	display: none;
+}
+
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
 	li:first-child {
