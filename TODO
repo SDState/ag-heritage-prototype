@@ -1,3 +1,13 @@
+# Fonts
+- [ ] $bodyFontStack: "'Helvetica Neue', Helvetica, Arial, sans serif";
+- [ ] $headingFontStack: "";
+- [ ] Set headings, Ag Heritage tiles, off-canvas and primary navigation to serif.
+- [ ] 
+
+# Questions
+- [ ] Font icons, SVG, or spritesheet?
+- [ ] Where to include a logo/link back to SDSU?
+
 # Desktop Navigation
 - [x] Move margin/padding from LI to UL so second line wraps to match the first.
 - [x] Shrink the seal and set into top-bar on medium screens.
@@ -11,11 +21,16 @@
 - [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
 
 # Homepage
-- [ ] Align slider dots to the right.
-- [ ] Figure out why the slider doesn't always load properly (in terms of its height).
-- [ ] Change Orbit GUI elements to one of Niki's colors.
+- [ ] Collapse the 3 columns to full width on mobile.
+- [ ] Collapse the double padding between panels to single.
+- [x] Figure out why the slider doesn't always load properly (in terms of its height).
+- [x] Change Orbit GUI elements to one of Niki's colors.
 
 # Secondary Pages
+- [ ] Match first side-nav link's top padding/margin to left
+- [ ] Darken the side-bar link to black
+- [ ] Match the padding/margin between the breadcrumbs and h1 to what's betwwen the h1 and initial paragraph.
+- [ ] Line up the start of the breadcrumbs with h1 and paragraph.
 - [x] Add a watcher to keep the page navigation and primary content area the same height.
 - [ ] Reverse side-nav and primary content columns so the nav moves on small screens, not large one.
 
@@ -24,6 +39,11 @@
 # General
 - [x] Increase height above headings in footer.
 - [ ] Look into reducing font size (across the board) at medium size.
+
+# Footer
+- [ ] Decrease leading between first-child h1's and ul
+- [ ] Decrease leading between list items
+- [ ] Fix awkward break in the contact title
 
 # Tooling
 - [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
