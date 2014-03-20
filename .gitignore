@@ -1,8 +1,6 @@
 .DS_Store
 .sass-cache
 build/*.html
-build/*/*.html
-build/*.css
-build/*/*.css
+build/stylesheets/app.css
 bower_components
 node_modules
