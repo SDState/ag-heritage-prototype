@@ -134,9 +134,8 @@
 }
 
 .right-off-canvas-menu {
-	background: $darkTan;
+	background: $black;
 	label {
-		background: $darkTan;
 		border-top: none !important;
 	}
 	input[type="search"] {
@@ -147,7 +146,7 @@
 ul.off-canvas-list li a {
 	color: $white;
 	&:hover {
-		background: $lightTan;
+		background: $darkTan;
 	}
 }
 
