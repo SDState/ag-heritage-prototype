@@ -20,8 +20,8 @@
 - [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
 
 # Homepage
-- [ ] Collapse the 3 columns to full width on mobile.
-- [ ] Collapse the double padding between panels to single.
+- [x] Collapse the 3 columns to full width on mobile.
+- [x] Collapse the double padding between panels to single.
 - [x] Figure out why the slider doesn't always load properly (in terms of its height).
 - [x] Change Orbit GUI elements to one of Niki's colors.
 
@@ -37,7 +37,6 @@
 
 # General
 - [x] Increase height above headings in footer.
-- [ ] Look into reducing font size (across the board) at medium size.
 
 # Footer
 - [ ] Decrease leading between first-child h1's and ul
