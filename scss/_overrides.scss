@@ -275,6 +275,14 @@ footer {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	#homepage-main-content .columns {
+		.panel {
+			margin-bottom: 0;
+		}
+		&:last-child .panel {
+			margin-bottom: 0.9375rem;
+		}
+	}
 }
 
 // Medium-sized screens and up
@@ -286,5 +294,15 @@ footer {
 	#copyright {
 		background: $black;
 		color: $lightGrey;
+	}
+}
+
+@media #{$screen} and (min-width:#{lower-bound($large-range)})
+{
+	#homepage-main-content .columns {
+		padding-right: 0;
+		&:last-child {
+			padding-right: 0.9375rem;
+		}
 	}
 }
