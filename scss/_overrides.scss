@@ -122,6 +122,7 @@
 
 .right-off-canvas-menu {
 	background: $black;
+	@include headingFont(13px);
 	label {
 		border-top: none !important;
 	}
