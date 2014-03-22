@@ -1,8 +1,7 @@
 # Fonts
-- [ ] $bodyFontStack: "'Helvetica Neue', Helvetica, Arial, sans serif";
-- [ ] $headingFontStack: "";
-- [ ] Set headings, Ag Heritage tiles, off-canvas and primary navigation to serif.
-- [ ] 
+- [x] $bodyFontStack: "'Helvetica Neue', Helvetica, Arial, sans serif";
+- [x] $headingFontStack: "Noto Serif";
+- [x] Set headings, Ag Heritage tiles, off-canvas and primary navigation to serif.
 
 # Questions
 - [ ] Font icons, SVG, or spritesheet?
@@ -17,7 +16,7 @@
 - [x] List items should hover with an accent color.
 - [x] White text.
 - [x] Bottom HR spacing.
-- [ ] Search still lacks a button.
+- [x] Search still lacks a button.
 - [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
 
 # Homepage
