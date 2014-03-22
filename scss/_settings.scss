@@ -19,7 +19,7 @@ $leftNavigationBackgroundColor:
 //@mixin bodyFonts($size: 12pt) {
 $bodyFont: 12px 'Helvetica Neue', Helvetica, Arial, sans serif;
 //}
-@mixin headingFont($size: 13px, $weight: bold) {
+@mixin headingFont($size: 17px, $weight: bold) {
 	font: $weight $size 'Noto Serif', serif;
 }
 

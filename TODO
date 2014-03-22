@@ -18,6 +18,7 @@
 - [x] Bottom HR spacing.
 - [x] Search still lacks a button.
 - [x] Look into using horizontal rules as the dividers between off-canvas list items (as opposed to the .divider class there now).
+- [x] Remove the seal and fix the title accordingly.
 
 # Homepage
 - [x] Collapse the 3 columns to full width on mobile.

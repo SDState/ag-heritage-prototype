@@ -3,6 +3,8 @@
 // CUSTOM OVERRIDES
 //
 
+
+// Navigation (Medium and Up)
 .top-bar {
 	color: $white;
 	height: 90px;
@@ -22,15 +24,21 @@
 		border: none;
 	}
 }
-
 .top-bar-section #ag-heritage-seal {
 	height: 9rem;
 	margin-left: -1.5rem;
 }
-.tab-bar-section #ag-heritage-seal {
-	height: $tabbar-height - 0.25rem;
+#page-title-medium-up {
+	font-color: $lightTan;
+	padding-top: 1rem;
+	a {
+//		color: $lightGrey;
+		line-height: 30px;
+		&:hover {
+			background: $black;
+		}	
+	}
 }
-
 #join-donate-contact {
 	background-color: $black;
 	li a {
@@ -55,7 +63,6 @@
 	color: $darkGrey;
 	height: ($topbar-height / 2) !important;
 }
-
 #primary-navigation {
 	background: $darkTan;
 	@include headingFont(13px, normal);
@@ -87,7 +94,11 @@
 		}
 	}
 }
+#primary-nav-wrapper {
+	background: $darkTan;
+}
 
+// Navigation text styling
 #page-title,
 .title,
 #primary-navigation,
@@ -96,32 +107,14 @@
 	text-transform:uppercase;
 }
 
-#page-title {
-	font-color: $lightTan;
-	padding-top: 1rem;
-	a {
-	color: $lightGrey;
-	line-height: 30px;
-	}
-}
-#primary-nav-wrapper {
-	background: $darkTan;
-}
-
-#page-title {
-	// line-height: 1rem !important;
-	a {
-		font-color: $lightTan;
-		&:hover {
-			background: $black;
-		}
-	}
-}
-
+// Navigation (Small and Medium)
+//.tab-bar-section #ag-heritage-seal {
+//	height: $tabbar-height - 0.25rem;
+//}
 .tab-bar h1.title {
-	line-height: 1.2rem;
-	padding-left: 0.5rem;
-	padding-top: 0.125rem;
+	line-height: 1.8rem;
+//	padding-left: 0.5rem;
+//	padding-top: 0.125rem;
 	a {
 		color: $lightGrey;
 	}
