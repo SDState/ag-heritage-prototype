@@ -5,6 +5,15 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( 'package.json' ),
 
 		assemble: {
+			// pages: {
+			// 	assets: 'bower_components',
+			// 	layout: 'layouts/default.hbs',
+			// 	partials: ['layouts/partials/*.hbs'],
+			// 	expand: true,
+			// 	cwd: 'pages',
+			// 	src: ['*.hbs'],
+			// 	dest: 'build/'
+			// }
 			options: {
 				assets: 'bower_components',
 				layout: 'layouts/default.hbs',
@@ -22,6 +31,7 @@ module.exports = function( grunt ) {
 			all: {
 				options: {
 					port: 9000,
+	        livereload: 35729,
 					// base: 'build',
 					hostname: '0.0.0.0',
 					keepalive: true
@@ -80,5 +90,5 @@ module.exports = function( grunt ) {
   // Default task to be run.
   grunt.registerTask( 'default', ['compass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
-	grunt.registerTask( 'server', ['open', 'connect'] );
+	grunt.registerTask( 'server', ['open', 'connect', 'watch'] );
 };
