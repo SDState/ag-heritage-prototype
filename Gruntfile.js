@@ -3,16 +3,21 @@ module.exports = function( grunt ) {
 
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
+		
+		config: {
+			src: 'app',
+			dist: 'build'
+		},
 
 		assemble: {
 			options: {
-				assets: 'bower_components',
-				layout: 'layouts/default.hbs',
-				partials: ['layouts/partials/*.hbs']
+				assets: 'app/bower_components',
+				layout: 'app/layouts/default.hbs',
+				partials: ['app/partials/*.hbs']
 			},
 			pages: {
 				expand: true,
-				cwd: 'pages',
+				cwd: 'app/pages',
 				src: ['*.hbs'],
 				dest: 'build/'
 			}
@@ -33,13 +38,13 @@ module.exports = function( grunt ) {
 		compass: {
 			options: {
 				cssDir: 'build/stylesheets',
-				imagesDir: 'images',
-				importPath: 'bower_components/foundation/scss',
+				imagesDir: 'app/images',
+				importPath: 'app/bower_components/foundation/scss',
 				javascriptsDir: 'javascripts',
-				sassDir: 'scss'
+				sassDir: 'app/scss'
 			},
 			compile: {
-				src: 'scss/',
+				src: 'app/scss',
 				dest: 'build/stylesheets/'
 			}
 		},
@@ -70,11 +75,11 @@ module.exports = function( grunt ) {
 				livereload: true 
 			}, 
 			stylesheets: {
-				files: ['scss/*'],
+				files: ['app/scss/*'],
 				tasks: ['compass']
 			},
 			handlebars: {
-				files: ['pages/*', 'layouts/**'],
+				files: ['app/pages/*', 'app/layouts/*', 'app/partials/*'],
 				tasks: ['assemble']
 			}
 		}
