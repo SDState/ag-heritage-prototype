@@ -1,23 +1,14 @@
 module.exports = function( grunt ) {
 	'use strict';
 
-	grunt.initConfig({
+	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 
 		assemble: {
-			// pages: {
-			// 	assets: 'bower_components',
-			// 	layout: 'layouts/default.hbs',
-			// 	partials: ['layouts/partials/*.hbs'],
-			// 	expand: true,
-			// 	cwd: 'pages',
-			// 	src: ['*.hbs'],
-			// 	dest: 'build/'
-			// }
 			options: {
 				assets: 'bower_components',
 				layout: 'layouts/default.hbs',
-				partials: ['layouts/partials/*.hbs'] // footer, navigations, etc.
+				partials: ['layouts/partials/*.hbs']
 			},
 			pages: {
 				expand: true,
@@ -34,7 +25,7 @@ module.exports = function( grunt ) {
 	        livereload: 35729,
 					// base: 'build',
 					hostname: '0.0.0.0',
-					keepalive: true
+					keepalive: false
 				}
 			},
 		},
@@ -53,20 +44,31 @@ module.exports = function( grunt ) {
 			}
 		},
 
-		copy: {
-			assets: {
+		// copy: {
+		// 	img: {
+		// 		src: 'img',
+		// 		dest: 'build/img'
+		// 	},4
+		// 	js: {
+		// 		src: 'js',
+		// 		dest: 'build/js'
+		// 	}
+			// assets: {
 				// src: 'stylesheets/app.css',
 				// dest: 'build/assets/stylesheets/app.css'
-			}
-		},
+			// }
+		// },
 
 		open: {
 			all: {
-				url: 'http://localhost:<%= connect.all.options.port %>'
+				url: 'http://localhost:<%= connect.all.options.port %>/build/homepage.html'
 			}
 		},
 
 		watch: {
+			options: {
+				livereload: true 
+			}, 
 			stylesheets: {
 				files: ['scss/*'],
 				tasks: ['compass']
@@ -79,16 +81,12 @@ module.exports = function( grunt ) {
 	});
 
   // Load npm plugins to provide necessary tasks.
-	require('load-grunt-tasks')(grunt);
+	require( 'load-grunt-tasks' )(grunt);
 	grunt.loadNpmTasks( 'assemble' );
-	// grunt.loadNpmTasks( 'grunt-contrib-connect' );
-	// grunt.loadNpmTasks( 'grunt-open' );
-	// grunt.loadNpmTasks( 'grunt-contrib-compass' );
-	// grunt.loadNpmTasks( 'grunt-contrib-copy' );
-	// grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
   // Default task to be run.
   grunt.registerTask( 'default', ['compass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
-	grunt.registerTask( 'server', ['open', 'connect', 'watch'] );
+	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
+	grunt.registerTask( 'serve', ['server'] );
 };
