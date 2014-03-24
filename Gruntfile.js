@@ -34,21 +34,21 @@ module.exports = function( grunt ) {
 				}
 			},
 		},
-
-		compass: {
-			options: {
-				cssDir: 'build/stylesheets',
-				imagesDir: 'app/images',
-				importPath: 'app/bower_components/foundation/scss',
-				javascriptsDir: 'javascripts',
-				sassDir: 'app/scss'
-			},
-			compile: {
-				src: 'app/scss',
-				dest: 'build/stylesheets/'
-			}
-		},
-
+		
+    sass: {
+      options: {
+        includePaths: ['app/bower_components/foundation/scss']
+      },
+      compile: {
+        options: {
+          outputStyle: 'compressed'
+        },
+        files: {
+          'build/stylesheets/app.css': 'app/scss/app.scss'
+        }        
+      }
+    },
+		
 		// copy: {
 		// 	img: {
 		// 		src: 'img',
@@ -76,7 +76,7 @@ module.exports = function( grunt ) {
 			}, 
 			stylesheets: {
 				files: ['app/scss/*'],
-				tasks: ['compass']
+				tasks: ['sass']
 			},
 			handlebars: {
 				files: ['app/pages/*', 'app/layouts/*', 'app/partials/*'],
@@ -88,9 +88,10 @@ module.exports = function( grunt ) {
   // Load npm plugins to provide necessary tasks.
 	require( 'load-grunt-tasks' )(grunt);
 	grunt.loadNpmTasks( 'assemble' );
+	grunt.loadNpmTasks( 'grunt-sass' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['compass', 'assemble'] );
+  grunt.registerTask( 'default', ['sass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
 	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
 	grunt.registerTask( 'serve', ['server'] );
