@@ -29,8 +29,8 @@
 # Secondary Pages
 - [x] Match first side-nav link's top padding/margin to left
 - [x] Darken the side-bar link to black
-- [ ] Match the padding/margin between the breadcrumbs and h1 to what's betwwen the h1 and initial paragraph.
-- [ ] Line up the start of the breadcrumbs with h1 and paragraph.
+- [x] Match the padding/margin between the breadcrumbs and h1 to what's between the h1 and initial paragraph.
+- [x] Line up the start of the breadcrumbs with h1 and paragraph.
 - [x] Add a watcher to keep the page navigation and primary content area the same height.
 - [ ] Reverse side-nav and primary content columns so the nav moves on small screens, not large one.
 

@@ -337,7 +337,6 @@ $crumb-padding: rem-calc(9 0 9);
 // $crumb-border-style: solid;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;
-
 // We use these to set various text styles for breadcrumbs.
 // $crumb-font-size: rem-calc(11);
 // $crumb-font-color: $primary-color;
@@ -345,7 +344,7 @@ $crumb-padding: rem-calc(9 0 9);
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
 // $crumb-link-decor: underline;
-
+$crumb-inline-list-margin-bottom: 0;
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: #aaa;
 // $crumb-slash: "/";
@@ -585,10 +584,7 @@ $crumb-padding: rem-calc(9 0 9);
 // $inline-list-top-margin: 0;
 // $inline-list-opposite-margin: 0;
 // $inline-list-bottom-margin: rem-calc(17);
-$inline-list-bottom-margin: rem-calc(0);
 // $inline-list-default-float-margin: rem-calc(-22);
-
-$crumbs-bottom-margin: rem-calc(0);
 // $inline-list-padding: 0;
 //$inline-list-padding: 3px inherit;
 
