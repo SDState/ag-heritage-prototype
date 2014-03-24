@@ -6,6 +6,7 @@ $lightGrey:   #cfcec7;
 $mediumGrey:  #a2a297;
 $darkGrey:    #727265;
 $black:       #4e4e42;
+$superblack:  #000000;
 $mainContentColor: #f3f3f1;
 $leftNavigationBackgroundColor:
               #87877c;
@@ -68,7 +69,7 @@ $rem-base: $base-font-size;
 
 // We use these to control various global styles
  $body-bg: $lightGrey;
- $body-font-color: $black;
+ $body-font-color: $superblack;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -155,7 +156,9 @@ $header-font-color: $darkTan;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
-$header-bottom-margin: .25rem;
+$header-bottom-margin: .5rem;
+$header-top-margin: .5rem;
+
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
@@ -208,8 +211,10 @@ $header-bottom-margin: .25rem;
 // $list-style-position: outside;
 // $list-side-margin: 1.1rem;
 // $list-ordered-side-margin: 1.4rem;
+
 // $list-side-margin-no-bullet: 0;
 // $list-nested-margin: rem-calc(20);
+
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3rem;
 // $definition-list-margin-bottom: rem-calc(12);
@@ -321,7 +326,9 @@ $header-bottom-margin: .25rem;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
+$crumb-padding: rem-calc(9 0 9);
 // $crumb-side-padding: rem-calc(12);
+
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
@@ -578,8 +585,10 @@ $header-bottom-margin: .25rem;
 // $inline-list-top-margin: 0;
 // $inline-list-opposite-margin: 0;
 // $inline-list-bottom-margin: rem-calc(17);
+$inline-list-bottom-margin: rem-calc(0);
 // $inline-list-default-float-margin: rem-calc(-22);
 
+$crumbs-bottom-margin: rem-calc(0);
 // $inline-list-padding: 0;
 //$inline-list-padding: 3px inherit;
 
@@ -948,6 +957,7 @@ $orbit-nav-arrow-color: $white;
 
 // We use this to control padding.
 // $side-nav-padding: rem-calc(14 0);
+$side-nav-padding: rem-calc(0 0);
 
 // We use these to control list styles.
 // $side-nav-list-type: none;

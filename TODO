@@ -27,8 +27,8 @@
 - [x] Change Orbit GUI elements to one of Niki's colors.
 
 # Secondary Pages
-- [ ] Match first side-nav link's top padding/margin to left
-- [ ] Darken the side-bar link to black
+- [x] Match first side-nav link's top padding/margin to left
+- [x] Darken the side-bar link to black
 - [ ] Match the padding/margin between the breadcrumbs and h1 to what's betwwen the h1 and initial paragraph.
 - [ ] Line up the start of the breadcrumbs with h1 and paragraph.
 - [x] Add a watcher to keep the page navigation and primary content area the same height.
