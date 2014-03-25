@@ -203,6 +203,13 @@ footer {
 	.columns, .panel {
 //		border: none;
 	}
+	
+	h4 {
+		margin-top: 1.5rem;
+		margin-bottom: 0.1rem;
+		font-size : 1.4rem;
+		text-transform : uppercase;
+	   }
 
 	h4,
 	a,
@@ -212,6 +219,11 @@ footer {
 	}
 	.side-nav li a:not(.button) {
 		color: $lightGrey;
+	}
+	.side-nav li {
+	margin: 0;
+	padding: 0.25rem inherit;
+	line-height: 1.1;
 	}
 }
 
