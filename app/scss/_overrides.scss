@@ -2,9 +2,24 @@
 // AG HERITAGE MUSEUM
 // CUSTOM OVERRIDES
 //
+
+// debolin trials
+
+// .button .search { float:left; width:50px; margin-left:5px;}
+// .search input {width:200px;float:left;top:5px;}
+// .search form {float:left !important; width:450px !important;}
+// end here
+
+
+
+
+
 ul.breadcrumbs {
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
+
+
 //no
 // Navigation (Medium and Up)
 .top-bar {
@@ -178,6 +193,11 @@ ul.off-canvas-list li a {
 	}
 }
 
+#primary-content-column{
+	h1{
+		margin-top: 0;
+	  }
+	}
 .tab-bar {
 	border-bottom: 0.25rem solid $darkTan;
 	box-sizing: content-box;
