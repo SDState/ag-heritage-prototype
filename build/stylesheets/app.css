@@ -7901,70 +7901,75 @@ ul.off-canvas-list li a:hover {
 }
 
 /* line 154, ../../scss/_overrides.scss */
-.orbit-slide-number {
-  display: none;
-}
-
-/* line 158, ../../scss/_overrides.scss */
 #homepage-main-content {
   background-color: #a2a297;
 }
-/* line 160, ../../scss/_overrides.scss */
+/* line 156, ../../scss/_overrides.scss */
 #homepage-main-content .panel {
   margin-top: 0.9375rem;
 }
-/* line 163, ../../scss/_overrides.scss */
+/* line 159, ../../scss/_overrides.scss */
 #homepage-main-content h1, #homepage-main-content h2, #homepage-main-content h3, #homepage-main-content h4, #homepage-main-content h5, #homepage-main-content h6 {
   color: #b6985a;
 }
 
-/* line 168, ../../scss/_overrides.scss */
+/* line 164, ../../scss/_overrides.scss */
 #main-content {
   background-color: #f3f3f1;
   color: #4e4e42;
 }
 
-/* line 172, ../../scss/_overrides.scss */
+/* line 170, ../../scss/_overrides.scss */
+.slider {
+  padding: 0;
+}
+
+/* line 174, ../../scss/_overrides.scss */
+.orbit-slide-number {
+  display: none;
+}
+
+/* line 178, ../../scss/_overrides.scss */
 #left-navigation {
   background-color: #87877c;
 }
-/* line 174, ../../scss/_overrides.scss */
+/* line 180, ../../scss/_overrides.scss */
 #left-navigation li:first-child {
   margin-top: 1rem;
 }
 
-/* line 179, ../../scss/_overrides.scss */
+/* line 185, ../../scss/_overrides.scss */
 .tab-bar {
   border-bottom: 0.25rem solid #b6985a;
   box-sizing: content-box;
 }
 
-/* line 185, ../../scss/_overrides.scss */
+/* line 191, ../../scss/_overrides.scss */
 #footer-wrapper {
   background-color: #a2a297;
 }
 
-/* line 188, ../../scss/_overrides.scss */
+/* line 194, ../../scss/_overrides.scss */
 footer {
   background-color: #4e4e42;
 }
-/* line 190, ../../scss/_overrides.scss */
+/* line 196, ../../scss/_overrides.scss */
 footer h4:first-child {
   margin-top: 1.25rem;
 }
-/* line 200, ../../scss/_overrides.scss */
+/* line 206, ../../scss/_overrides.scss */
 footer h4,
 footer a,
 footer a:hover,
 footer a:focus {
   color: #cfcec7;
 }
-/* line 203, ../../scss/_overrides.scss */
+/* line 209, ../../scss/_overrides.scss */
 footer .side-nav li a:not(.button) {
   color: #cfcec7;
 }
 
-/* line 208, ../../scss/_overrides.scss */
+/* line 214, ../../scss/_overrides.scss */
 #address {
   background-color: #a2a297;
   border: none;
@@ -7972,19 +7977,19 @@ footer .side-nav li a:not(.button) {
   margin-right: -1rem;
   margin-bottom: 0;
 }
-/* line 218, ../../scss/_overrides.scss */
+/* line 224, ../../scss/_overrides.scss */
 #address a,
 #address a:focus,
 #address a:hover {
   color: white !important;
 }
 
-/* line 223, ../../scss/_overrides.scss */
+/* line 229, ../../scss/_overrides.scss */
 #social-media-icons {
   margin: 1rem 0;
 }
 
-/* line 230, ../../scss/_overrides.scss */
+/* line 236, ../../scss/_overrides.scss */
 #copyright {
   color: white;
   background-color: #a2a297;
@@ -7992,37 +7997,37 @@ footer .side-nav li a:not(.button) {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 242, ../../scss/_overrides.scss */
+  /* line 248, ../../scss/_overrides.scss */
   footer .columns {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 246, ../../scss/_overrides.scss */
+  /* line 252, ../../scss/_overrides.scss */
   #social-media-icons, #address {
     width: 100%;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 254, ../../scss/_overrides.scss */
+  /* line 260, ../../scss/_overrides.scss */
   #ag-heritage-seal {
     height: 5.375rem !important;
     margin-left: 1rem !important;
   }
 
-  /* line 258, ../../scss/_overrides.scss */
+  /* line 264, ../../scss/_overrides.scss */
   #primary-navigation {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 267, ../../scss/_overrides.scss */
+  /* line 273, ../../scss/_overrides.scss */
   #social-media-icons {
     text-align: right !important;
   }
 
-  /* line 270, ../../scss/_overrides.scss */
+  /* line 276, ../../scss/_overrides.scss */
   #copyright {
     background: #4e4e42;
     color: #cfcec7;
