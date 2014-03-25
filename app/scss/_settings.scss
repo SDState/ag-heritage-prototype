@@ -6,9 +6,23 @@ $lightGrey:   #cfcec7;
 $mediumGrey:  #a2a297;
 $darkGrey:    #727265;
 $black:       #4e4e42;
+$superblack:  #000000;
 $mainContentColor: #f3f3f1;
 $leftNavigationBackgroundColor:
               #87877c;
+							
+// FONTS
+//$bodyFonts: 'Helvetica Neue', Helvetica, Arial, sans serif;
+//$headingFonts: 'Noto Serif', serif;			
+//@mixin fonts($stack: $bodyFonts, $size: 12pt) {
+//	font: bold;
+//}
+//@mixin bodyFonts($size: 12pt) {
+$bodyFont: 12px 'Helvetica Neue', Helvetica, Arial, sans serif;
+//}
+@mixin headingFont($size: 17px, $weight: bold) {
+	font: $weight $size 'Noto Serif', serif;
+}
 
 // BORDER RADIUS
 $agHeritageBorderRadius: 15px;
@@ -33,6 +47,8 @@ $agHeritageBorderRadius: 15px;
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 // $base-font-size: 100%;
+$base-font-size: 12px;
+$rem-base: $base-font-size;
 
 // The $base-line-height is 100% while $base-font-size is 150%
 // $base-line-height: 150%;
@@ -53,7 +69,7 @@ $agHeritageBorderRadius: 15px;
 
 // We use these to control various global styles
  $body-bg: $lightGrey;
- $body-font-color: $black;
+ $body-font-color: $superblack;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -70,6 +86,7 @@ $agHeritageBorderRadius: 15px;
 // $primary-color: #008CBA;
  $primary-color: $darkTan;
 // $secondary-color: #e7e7e7;
+$secondary-color: $lightTan;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -131,12 +148,17 @@ $agHeritageBorderRadius: 15px;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
+ $header-font-family: 'Noto Serif', serif;
 // $header-font-weight: 300;
+$header-font-weight: bold;
 // $header-font-style: normal;
- $header-font-color: $darkTan;
+$header-font-color: $darkTan;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
+$header-bottom-margin: .5rem;
+$header-top-margin: .5rem;
+
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
@@ -189,8 +211,10 @@ $agHeritageBorderRadius: 15px;
 // $list-style-position: outside;
 // $list-side-margin: 1.1rem;
 // $list-ordered-side-margin: 1.4rem;
+
 // $list-side-margin-no-bullet: 0;
 // $list-nested-margin: rem-calc(20);
+
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3rem;
 // $definition-list-margin-bottom: rem-calc(12);
@@ -302,7 +326,9 @@ $agHeritageBorderRadius: 15px;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
+$crumb-padding: rem-calc(9 0 9);
 // $crumb-side-padding: rem-calc(12);
+
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
@@ -311,7 +337,6 @@ $agHeritageBorderRadius: 15px;
 // $crumb-border-style: solid;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;
-
 // We use these to set various text styles for breadcrumbs.
 // $crumb-font-size: rem-calc(11);
 // $crumb-font-color: $primary-color;
@@ -319,7 +344,7 @@ $agHeritageBorderRadius: 15px;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;
 // $crumb-link-decor: underline;
-
+$crumb-inline-list-margin-bottom: 0;
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: #aaa;
 // $crumb-slash: "/";
@@ -560,17 +585,19 @@ $agHeritageBorderRadius: 15px;
 // $inline-list-opposite-margin: 0;
 // $inline-list-bottom-margin: rem-calc(17);
 // $inline-list-default-float-margin: rem-calc(-22);
-
 // $inline-list-padding: 0;
+//$inline-list-padding: 3px inherit;
 
 // We use this to control the overflow of the inline list.
 // $inline-list-overflow: hidden;
 
 // We use this to control the list items
 // $inline-list-display: block;
+//$inline-list-display: inline-block;
 
 // We use this to control any elments within list items
 // $inline-list-children-display: block;
+//$inline-list-children-display: inline-block;
 
 // Joyride
 
@@ -926,6 +953,7 @@ $orbit-nav-arrow-color: $white;
 
 // We use this to control padding.
 // $side-nav-padding: rem-calc(14 0);
+$side-nav-padding: rem-calc(0 0);
 
 // We use these to control list styles.
 // $side-nav-list-type: none;

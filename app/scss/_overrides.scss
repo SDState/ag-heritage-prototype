@@ -2,7 +2,11 @@
 // AG HERITAGE MUSEUM
 // CUSTOM OVERRIDES
 //
-
+ul.breadcrumbs {
+	margin-bottom: 0 !important;
+}
+//no
+// Navigation (Medium and Up)
 .top-bar {
 	color: $white;
 	height: 90px;
@@ -21,17 +25,22 @@
 		background-color: $lightGrey;
 		border: none;
 	}
-
 }
-
 .top-bar-section #ag-heritage-seal {
 	height: 9rem;
 	margin-left: -1.5rem;
 }
-.tab-bar-section #ag-heritage-seal {
-	height: $tabbar-height - 0.25rem;
+#page-title-medium-up {
+	font-color: $lightTan;
+	padding-top: 1rem;
+	a {
+//		color: $lightGrey;
+		line-height: 30px;
+		&:hover {
+			background: $black;
+		}	
+	}
 }
-
 #join-donate-contact {
 	background-color: $black;
 	li a {
@@ -56,44 +65,42 @@
 	color: $darkGrey;
 	height: ($topbar-height / 2) !important;
 }
-
-.orbit-bullets-container {
-	margin-top:-60px;
-	margin-right: 0.9375rem;
-	// .orbit-bullets {
-		// float: right;
-	// }
-}
-
-.main-section,
-#primary-nav-wrapper {
-	z-index: -1;
-	position:relative;
-}
-
 #primary-navigation {
-	// clear:both;
-	margin-bottom: 0;
-	margin-left: 6rem;
-	background-color: $darkTan;
-	a {
-		color: $white;
-	}
-	&:hover,
-	&:focus {
-		color: $white;
-	}
+	background: $darkTan;
+	@include headingFont(13px, normal);
+//	list-style-type: none;
+	text-align: center;
+	margin: 0 auto;
 	li {
-		border-left: 1px solid $lightTan;
-		margin-left: 0;
-		margin-right: 0.5rem;
-		padding-left: 0.5rem;
-		&:first-child {
-			border-left: none;
+		display: inline-block;
+//		margin: inherit 0.5rem;
+		padding: 0.5rem;
+		&:hover,
+		&:focus {
+			background: $lightTan;
+		}
+		&:before {
+//			content: '|';
+		}
+		a {
+			color: $white;
+			&:before {
+//				color: $white;
+//				content: '| ';
+			}
+			&:hover,
+			&:focus {
+				content: none;
+			}
+			
 		}
 	}
 }
+#primary-nav-wrapper {
+	background: $darkTan;
+}
 
+// Navigation text styling
 #page-title,
 .title,
 #primary-navigation,
@@ -102,41 +109,23 @@
 	text-transform:uppercase;
 }
 
-#page-title {
-	font-color: $lightTan;
-	padding-top: 1rem;
-	a {
-	color: $lightGrey;
-	line-height: 30px;
-	}
-}
-#primary-nav-wrapper {
-	background: $darkTan;
-}
-
-#page-title {
-	// line-height: 1rem !important;
-	a {
-		font-color: $lightTan;
-		&:hover {
-			background: $black;
-		}
-	}
-}
-
+// Navigation (Small and Medium)
+//.tab-bar-section #ag-heritage-seal {
+//	height: $tabbar-height - 0.25rem;
+//}
 .tab-bar h1.title {
-	line-height: 1.2rem;
-	padding-left: 0.5rem;
-	padding-top: 0.125rem;
+	line-height: 1.8rem;
+//	padding-left: 0.5rem;
+//	padding-top: 0.125rem;
 	a {
 		color: $lightGrey;
 	}
 }
 
 .right-off-canvas-menu {
-	background: $darkTan;
+	background: $black;
+	@include headingFont(13px);
 	label {
-		background: $darkTan;
 		border-top: none !important;
 	}
 	input[type="search"] {
@@ -147,8 +136,24 @@
 ul.off-canvas-list li a {
 	color: $white;
 	&:hover {
-		background: $lightTan;
+		background: $darkTan;
 	}
+}
+
+.orbit-bullets-container {
+	margin-top:-60px;
+	margin-right: 0.9375rem;
+	// .orbit-bullets {
+		// float: right;
+	// }
+}
+//.main-section > row > column
+.slider {
+	padding: 0;
+}
+
+.orbit-slide-number {
+	display: none;
 }
 
 #homepage-main-content {
@@ -164,15 +169,6 @@ ul.off-canvas-list li a {
 #main-content {
 	background-color: $mainContentColor;
 	color: $black;
-}
-
-//.main-section > row > column
-.slider {
-	padding: 0;
-}
-
-.orbit-slide-number {
-	display: none;
 }
 
 #left-navigation {
@@ -239,9 +235,6 @@ footer {
 	margin-bottom: 0;
 }
 
-
-
-
 // Small-sized screens only
 @media #{$screen} and (max-width: #{upper-bound($small-range)})
 {
@@ -251,6 +244,19 @@ footer {
 	}
 	#social-media-icons, #address {
 		width: 100%;
+	}
+}
+
+// Small-sized screens and up
+@media #{$screen} and (min-width:#{lower-bound($small-range)})
+{
+	#homepage-main-content .columns {
+		.panel {
+			margin-bottom: 0;
+		}
+		&:last-child .panel {
+			margin-bottom: 0.9375rem;
+		}
 	}
 }
 
@@ -276,5 +282,22 @@ footer {
 	#copyright {
 		background: $black;
 		color: $lightGrey;
+	}
+}
+
+// Large-sized screens and up
+@media #{$screen} and (min-width:#{lower-bound($large-range)})
+{
+	.main-section,
+	#primary-nav-wrapper {
+		z-index: -1;
+	//	position:relative;
+	}
+	
+	#homepage-main-content .columns {
+		padding-right: 0;
+		&:last-child {
+			padding-right: 0.9375rem;
+		}
 	}
 }
