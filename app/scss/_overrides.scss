@@ -3,8 +3,11 @@
 // CUSTOM OVERRIDES
 //
 ul.breadcrumbs {
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
+
+
 //no
 // Navigation (Medium and Up)
 .top-bar {
@@ -178,6 +181,11 @@ ul.off-canvas-list li a {
 	}
 }
 
+#primary-content-column{
+	h1{
+		margin-top: 0;
+	  }
+	}
 .tab-bar {
 	border-bottom: 0.25rem solid $darkTan;
 	box-sizing: content-box;
