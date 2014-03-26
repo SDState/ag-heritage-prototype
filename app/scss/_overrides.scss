@@ -193,13 +193,42 @@ ul.off-canvas-list li a {
 	li:first-child {
 		margin-top: 1rem;
 	}
+	
+ul.side-nav li a{
+		color: $superblack;
+		&:hover
+		{
+		color: $black;
+		}
+	}
+
 }
 
 #primary-content-column{
 	h1{
 		margin-top: 0;
+		@include headingFont(17pt);
 	  }
+	
 	}
+	
+#main-content{
+    h1{
+	@include headingFont(17pt);
+    }
+    h2{
+	@include headingFont(15pt);
+	}
+	h3{
+	@include headingFont(13pt);
+	}
+	h4{
+	@include headingFont(11pt);
+	}
+	h5{
+	@include headingFont(10pt);
+	}
+}
 .tab-bar {
 	border-bottom: 0.25rem solid $darkTan;
 	box-sizing: content-box;
@@ -240,7 +269,10 @@ footer {
 	a:focus {
 		color: $lightGrey;
 	}
-	.side-nav li a:not(.button) {
+	
+	// 
+	
+	.side-nav li a:not(.button)  {
 		color: $lightGrey;
 	}
 	.side-nav li {
