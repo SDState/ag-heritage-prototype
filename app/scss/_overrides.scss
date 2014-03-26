@@ -42,8 +42,9 @@ ul.breadcrumbs {
 	}
 }
 .top-bar-section #ag-heritage-seal {
-	height: 9rem;
+	height: 12rem;
 	margin-left: -1.5rem;
+//	z-index: 1000;
 }
 #page-title-medium-up {
 	font-color: $lightTan;
@@ -190,8 +191,10 @@ ul.off-canvas-list li a {
 
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
+	z-index: -1;
 	li:first-child {
-		margin-top: 1rem;
+		margin-top: 2.5rem;
+//		padding-top: 1.5rem;
 	}
 }
 
@@ -332,8 +335,9 @@ footer {
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
 	.main-section,
-	#primary-nav-wrapper {
-		z-index: -1;
+	.main-section > .row {
+//		clear: both;
+//		z-index: -1;
 	//	position:relative;
 	}
 
