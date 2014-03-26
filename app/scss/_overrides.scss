@@ -2,6 +2,18 @@
 // AG HERITAGE MUSEUM
 // CUSTOM OVERRIDES
 //
+
+// debolin trials
+
+// .button .search { float:left; width:50px; margin-left:5px;}
+// .search input {width:200px;float:left;top:5px;}
+// .search form {float:left !important; width:450px !important;}
+// end here
+
+
+
+
+
 ul.breadcrumbs {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -41,11 +53,13 @@ ul.breadcrumbs {
 		line-height: 30px;
 		&:hover {
 			background: $black;
-		}	
+		}
 	}
 }
 #join-donate-contact {
 	background-color: $black;
+	// display: block;
+	margin-bottom: 0.5rem;
 	li a {
 		background-color: $mediumGrey;
 	}
@@ -95,7 +109,7 @@ ul.breadcrumbs {
 			&:focus {
 				content: none;
 			}
-			
+
 		}
 	}
 }
@@ -211,6 +225,15 @@ footer {
 		text-transform : uppercase;
 	   }
 
+	.columns {
+		border: none;
+		padding-right: 0;
+		// margin-right: -1rem;
+	}
+	.panel {
+
+
+	}
 	h4,
 	a,
 	a:hover,
@@ -234,7 +257,7 @@ footer {
 	margin-right: -1rem ; //-0.9375rem;
 	margin-bottom: 0;
 //	z-index: 1000;
-
+	width: 100%;
 	a,
 	a:focus,
 	a:hover {
@@ -243,7 +266,7 @@ footer {
 }
 
 #social-media-icons {
-	margin: 1rem 0;
+	margin: 1rem;
 	img {
 		// float: right;
 	}
@@ -313,7 +336,7 @@ footer {
 		z-index: -1;
 	//	position:relative;
 	}
-	
+
 	#homepage-main-content .columns {
 		padding-right: 0;
 		&:last-child {
