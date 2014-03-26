@@ -226,10 +226,10 @@ ul.side-nav li a{
 	@include headingFont(13pt);
 	}
 	h4{
-	@include headingFont(11pt);
+	@include headingFont(12pt);
 	}
 	h5{
-	@include headingFont(10pt);
+	@include headingFont(12pt, italic);
 	}
 }
 .tab-bar {
