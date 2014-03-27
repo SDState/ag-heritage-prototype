@@ -101,26 +101,24 @@ form{
 #primary-navigation {
 	background: $darkTan;
 	@include headingFont(13px, normal);
-//	list-style-type: none;
 	text-align: center;
 	margin: 0 auto;
 	li {
 		display: inline-block;
-//		margin: inherit 0.5rem;
-		padding: 0.5rem;
+		padding: 0.5rem 0;
 		&:hover,
 		&:focus {
 			background: $lightTan;
 		}
 		&:before {
-//			content: '|';
+			// content: '|';
 		}
 		a {
 			color: $white;
-			padding: 0.5rem;
+			padding: 0.5rem 3px;
 			&:before {
 //				color: $white;
-//				content: '| ';
+				// content: '| ';
 			}
 			&:hover,
 			&:focus {
@@ -378,10 +376,6 @@ footer {
 		height: ($tabbar-height * 2) - 0.25rem !important;
 		margin-left: 1rem !important;
 	}
-	#primary-navigation {
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 // Medium-sized screens and up
@@ -399,6 +393,13 @@ footer {
 // Large-sized screens and up
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
+	#primary-navigation {
+		li, a {
+			// padding: inherit 0.5rem;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+		}
+	}
 	.main-section,
 	.main-section > .row {
 //		clear: both;
@@ -413,7 +414,8 @@ footer {
 	#homepage-main-content .columns {
 		padding-right: 0;
 		&:last-child {
-			padding-right: 0.9375rem;
+			// padding-right: 0.9375rem;
+			padding-right: 1.25rem;
 		}
 	}
 }
