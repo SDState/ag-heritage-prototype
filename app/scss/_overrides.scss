@@ -89,15 +89,22 @@ form{
 
 	input{
 	top: 0px;
-	margin-top: 6px;
+	margin-top: 1.6rem;
 	margin-right: 0px;
 	width: 148px;
+	height: 26px;
 	}
 
 }
 
-
+a.button {
+	top: 0px;
+	margin-top: 1.6rem;
+	height: 26px;
 }
+}
+
+
 #primary-navigation {
 	background: $darkTan;
 	@include headingFont(13px, normal);
