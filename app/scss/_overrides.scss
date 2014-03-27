@@ -41,7 +41,8 @@ ul.breadcrumbs {
 .top-bar-section #ag-heritage-seal {
 	height: 12rem;
 	margin-left: -1.5rem;
-//	z-index: 1000;
+	position: relative;
+	z-index: 1;
 }
 #page-title-medium-up {
 	font-color: $lightTan;
@@ -199,7 +200,7 @@ ul.off-canvas-list li a {
 //.main-section > row > column
 .slider {
 	padding: 0;
-	z-index: -1;
+	// z-index: -1;
 }
 
 .orbit-slide-number {
@@ -254,16 +255,9 @@ ul.off-canvas-list li a {
 	}
 }
 
-.left-navigation-spacer {
-	background: $leftNavigationBackgroundColor;
-	height: 2.5rem;
-	z-index: -1;
-}
-
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
-	// z-index: -1;
-	padding-top: 1.25rem;
+	padding-top: 2.5rem;
 }
 
 #footer-wrapper {
@@ -418,10 +412,6 @@ footer {
 //		clear: both;
 //		z-index: -1;
 	//	position:relative;
-	}
-
-	#left-navigation {
-		padding-top: 0;
 	}
 
 	#homepage-main-content .columns {
