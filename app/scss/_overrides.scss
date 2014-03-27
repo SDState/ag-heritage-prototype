@@ -102,6 +102,10 @@ a.button {
 	top: 0px;
 	margin-top: 1.6rem;
 	height: 26px;
+	&:hover,
+	&:focus {
+		background: $lightTan;
+	}
 }
 }
 
