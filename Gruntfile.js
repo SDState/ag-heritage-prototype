@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
 
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
-		
+
 		config: {
 			src: 'app',
 			dist: 'build'
@@ -23,18 +23,26 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		buildcontrol: {
+			options: {
+				dir: 'build',
+				remote: 'git@github.com:SDState/ag-heritage-prototype.git',
+				branch: 'gh-pages'
+			}
+		},
+
 		connect: {
 			all: {
 				options: {
 					port: 9000,
 	        livereload: 35729,
-					// base: 'build',
+					base: 'build',
 					hostname: '0.0.0.0',
 					keepalive: false
 				}
 			},
 		},
-		
+
     sass: {
       options: {
         includePaths: ['app/bower_components/foundation/scss']
@@ -45,35 +53,51 @@ module.exports = function( grunt ) {
         },
         files: {
           'build/stylesheets/app.css': 'app/scss/app.scss'
-        }        
+        }
       }
     },
-		
-		// copy: {
-		// 	img: {
-		// 		src: 'img',
-		// 		dest: 'build/img'
-		// 	},4
-		// 	js: {
-		// 		src: 'js',
-		// 		dest: 'build/js'
-		// 	}
-			// assets: {
-				// src: 'stylesheets/app.css',
-				// dest: 'build/assets/stylesheets/app.css'
-			// }
-		// },
+
+		concat: {
+			assets: {
+				src: [
+					'app/bower_components/jquery/dist/jquery.min.js',
+					'app/bower_components/foundation/js/foundation.min.js'
+				],
+				dest: 'build/js/built.js'
+			}
+		},
+
+		copy: {
+			img: {
+				src: 'img/*',
+				dest: 'build/img'
+			},
+			js: {
+				src: 'js/*',
+				dest: 'build/js'
+			},
+			assets: {
+				expand: true,
+				cwd: 'app/bower_components/modernizr',
+				src: [
+					'modernizr.js'
+			// 		'jquery/dist/jquery.min.js',
+			// 		'foundation/js/foundation.min.js'
+				],
+				dest: 'build/js/'
+			}
+		},
 
 		open: {
 			all: {
-				url: 'http://localhost:<%= connect.all.options.port %>/build/index.html'
+				url: 'http://localhost:<%= connect.all.options.port %>/index.html'
 			}
 		},
 
 		watch: {
 			options: {
-				livereload: true 
-			}, 
+				livereload: true
+			},
 			stylesheets: {
 				files: ['app/scss/*'],
 				tasks: ['sass']
@@ -89,9 +113,10 @@ module.exports = function( grunt ) {
 	require( 'load-grunt-tasks' )(grunt);
 	grunt.loadNpmTasks( 'assemble' );
 	grunt.loadNpmTasks( 'grunt-sass' );
+	grunt.loadNpmTasks( 'grunt-build-control' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['sass', 'assemble'] );
+  grunt.registerTask( 'default', ['copy', 'concat', 'sass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
 	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
 	grunt.registerTask( 'serve', ['server'] );
