@@ -66,7 +66,7 @@ module.exports = function( grunt ) {
 
 		open: {
 			all: {
-				url: 'http://localhost:<%= connect.all.options.port %>/build/homepage.html'
+				url: 'http://localhost:<%= connect.all.options.port %>/build/index.html'
 			}
 		},
 

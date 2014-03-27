@@ -60,7 +60,7 @@ ul.breadcrumbs {
 #join-donate-contact {
 	background-color: $black;
 	// display: block;
-	margin-bottom: 0.5rem;
+	//margin-bottom: 0.5rem;
 	li a {
 		background-color: $mediumGrey;
 	}
@@ -78,10 +78,29 @@ ul.breadcrumbs {
 		border-bottom-right-radius: $agHeritageBorderRadius;
 	}
 }
-#join-donate-contact,
+#join-donate-contact
+{
+height: 45px;
+
+overflow: hidden;
+}
+
 #search {
-	color: $darkGrey;
-	height: ($topbar-height / 2) !important;
+	// color: $darkGrey;
+	// height: ($topbar-height / 2) !important;
+
+form{
+
+	input{
+	top: 0px;
+	margin-top: 6px;
+	margin-right: 0px;
+	width: 148px;
+	}
+
+}
+
+
 }
 #primary-navigation {
 	background: $darkTan;
