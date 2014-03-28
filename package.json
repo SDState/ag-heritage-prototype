@@ -5,16 +5,18 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "~0.7.0",
-    "grunt": "latest",
-    "grunt-contrib-connect": "^0.7.0",
     "assemble": "^0.4.36",
-    "grunt-contrib-copy": "^0.5.0",
+    "connect-livereload": "^0.3.2",
+    "grunt": "latest",
+    "grunt-build-control": "^0.1.2",
     "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-connect": "^0.7.0",
+    "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-watch": "^0.5.3",
     "grunt-open": "^0.2.3",
-    "connect-livereload": "^0.3.2",
+    "grunt-sass": "~0.8.0",
     "load-grunt-tasks": "^0.3.0",
-    "grunt-sass": "~0.8.0"
+    "node-sass": "~0.7.0"
   }
 }
