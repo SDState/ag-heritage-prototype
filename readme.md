@@ -5,19 +5,13 @@
 
 These instructions assume you have Git and Node installed.
 
-2. If it isn't already, install [Grunt]: `npm install -g grunt-cli`.
-3. If it isn't already, install [Bower]: `npm install -g bower`.
-1. Clone the repo.
-2. Inside that folder, run `npm install && bower install`.
-3. Check out a new branch (from `master`) to begin your work.
-4. Write code!
-5. Merge your commits back into *master* and push to the server with `git push` once the feature is complete.
-
-If you or anyone on your team is interested in building or serving the Ag Heritage prototype site locally, I wanted to share some things you'll need installed locally beforehand.
-Git and Node.js installed locally.
-Clone the repo and within that, run `npm install && bower install` to fetch the dependencies.
-After that, `grunt serve` will initiate a build, launch a local Connect server, open your default browser to a tab with the local site open, and watch for further changes, at which point Grunt recompiles the site and relaunched the browser for you automatically. It's pretty neat.to
-
+1. If it isn't already, install [Grunt]: `npm install -g grunt-cli`.
+2. If it isn't already, install [Bower]: `npm install -g bower`.
+3. Clone the repo.
+4. Inside that folder, run `npm install && bower install`.
+5. Check out a new branch (from `master`) to begin your work.
+6. Write code!
+7. Merge your commits back into *master* and push to the server with `git push` once the feature is complete.
 
 ## Using Grunt
 
