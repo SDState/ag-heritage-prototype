@@ -1,10 +1,33 @@
+# General
+- [ ] Update mobile navigation text to match desktop.
+- [ ] Different heading colors on mobile and desktop.
+- [ ] Link mobile menu links to navigate site.
+- [ ] Footer address font size discrepancy.
+- [ ] Drop mobile heading to "Ag" on secondary pages too.
+- [ ] Determine an aspect ratio for the Orbit images (bottom cutting off on mobile).
+- [ ] Top margin on small sizes of the footer (shouldn't be same as large size)
+- [ ] Add app.js to list of concatenated JavaScript files.
+
+# Android
+## generic browser
+- [ ] Noto Serif not loading in Android browser.
+- [ ] Mobile menu isn't working in Android browser.
+## Chrome
+## Firefox
+- [ ] Disable swipe on mobile menu (only works in Firefox, conflicts/breaks the Orbit slider there).
+
+# Internet Explorer
+Fix the broken header wrapping.
+
+---
+
 # Fonts
 - [x] $bodyFontStack: "'Helvetica Neue', Helvetica, Arial, sans serif";
 - [x] $headingFontStack: "Noto Serif";
 - [x] Set headings, Ag Heritage tiles, off-canvas and primary navigation to serif.
 
 # Questions
-- [ ] Font icons, SVG, or spritesheet?
+- [x] Font icons, SVG, or spritesheet?
 - [ ] Where to include a logo/link back to SDSU?
 
 # Desktop Navigation
@@ -32,7 +55,6 @@
 - [x] Match the padding/margin between the breadcrumbs and h1 to what's between the h1 and initial paragraph.
 - [x] Line up the start of the breadcrumbs with h1 and paragraph.
 - [x] Add a watcher to keep the page navigation and primary content area the same height.
-- [ ] Reverse side-nav and primary content columns so the nav moves on small screens, not large one.
 
 # Page Navigation
 
@@ -40,10 +62,10 @@
 - [x] Increase height above headings in footer.
 
 # Footer
-- [ ] Decrease leading between first-child h1's and ul
-- [ ] Decrease leading between list items
+- [x] Decrease leading between first-child h1's and ul
+- [x] Decrease leading between list items
 - [ ] Fix awkward break in the contact title
 
 # Tooling
 - [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
-- [ ] Combine Grunt `watch` and `server` tasks into a single command.
+- [x] Combine Grunt `watch` and `server` tasks into a single command.
