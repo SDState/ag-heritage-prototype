@@ -61,21 +61,26 @@ module.exports = function( grunt ) {
 			assets: {
 				src: [
 					'app/bower_components/jquery/dist/jquery.min.js',
-					'app/bower_components/foundation/js/foundation.min.js'
+					'app/bower_components/foundation/js/foundation.min.js',
+					'app/js/app.js'
 				],
-				dest: 'build/js/built.js'
+				dest: 'build/js/main.js'
 			}
 		},
 
 		copy: {
 			img: {
+				expand: true,
+				cwd: 'app',
 				src: 'img/*',
-				dest: 'build/img'
+				dest: 'build/'
 			},
-			js: {
-				src: 'js/*',
-				dest: 'build/js'
-			},
+			// js: {
+			// 	expand: true,
+			// 	cwd: 'app',
+			// 	src: 'js/*',
+			// 	dest: 'build/'
+			// },
 			assets: {
 				expand: true,
 				cwd: 'app/bower_components/modernizr',
