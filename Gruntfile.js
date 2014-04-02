@@ -24,10 +24,13 @@ module.exports = function( grunt ) {
 		},
 
 		buildcontrol: {
-			site: {
+			options: {
+				dir: 'build',
+				commit: true,
+				push: true,
+			},
+			pages: {
 				options: {
-					dir: 'build',
-					push: true,
 					remote: 'git@github.com:SDState/ag-heritage-prototype.git',
 					branch: 'gh-pages'
 				}
