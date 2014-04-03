@@ -9,3 +9,6 @@
 - Fixed footer to be head nav consistent
 - Lowercased mobile header
 - Fixed search on IE; removed margin-top, added a <br>
+- Moved the linespacing in address like the footer text (wrapped lines versus new lines)
+- More space between bottom of breadcrumbs and top of headings (doubled, at least, or back to default)
+- Increased Orbit rotation to 3 seconds -- see the JavaScript section in Foundation docs

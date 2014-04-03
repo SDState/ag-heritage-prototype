@@ -11,10 +11,9 @@ height: 2.5rem;
 }
 
 
-ul.breadcrumbs {
-	margin-bottom: 0;
+ ul.breadcrumbs {
 	padding-bottom: 0;
-}
+ }
 
 
 //no
@@ -322,6 +321,8 @@ footer {
 	color: $white;
 	margin-right: -1rem ; //-0.9375rem;
 	margin-bottom: 0;
+		padding: 0.50rem inherit;
+		line-height: 1.4;
 //	z-index: 1000;
 	width: 100%;
 	a,

@@ -131,5 +131,5 @@ module.exports = function( grunt ) {
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
 	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
 	grunt.registerTask( 'serve', ['server'] );
-	grunt.registerTask( 'publish' ['buildcontrol'] );
+	grunt.registerTask( 'publish', ['buildcontrol'] );
 };
