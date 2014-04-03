@@ -1,5 +1,5 @@
 # General
-- [ ] Update mobile navigation text to match desktop.
+- [x] Update mobile navigation text to match desktop.
 - [x] Different heading colors on mobile and desktop.
 - [x] Link mobile menu links to navigate site.
 - [ ] Footer address font size discrepancy.
@@ -64,7 +64,7 @@
 # Footer
 - [x] Decrease leading between first-child h1's and ul
 - [x] Decrease leading between list items
-- [ ] Fix awkward break in the contact title
+- [x] Fix awkward break in the contact title
 
 # Tooling
 - [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
