@@ -68,5 +68,6 @@
 - [x] Fix awkward break in the contact title
 
 # Tooling
-- [ ] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
+- [x] Implement `copy` task in Grunt to move appropriate assets into build/ and update the `assets` environment variable accordingly.
 - [x] Combine Grunt `watch` and `server` tasks into a single command.
+- [x] Implement a `clean` task.
