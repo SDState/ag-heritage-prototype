@@ -74,6 +74,8 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		clean: ['build'],
+
 		copy: {
 			img: {
 				expand: true,
@@ -127,7 +129,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-build-control' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['copy', 'concat', 'sass', 'assemble'] );
+  grunt.registerTask( 'default', ['clean', 'copy', 'concat', 'sass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
 	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
 	grunt.registerTask( 'serve', ['server'] );
