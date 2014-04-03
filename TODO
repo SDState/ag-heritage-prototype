@@ -17,7 +17,7 @@
 - [ ] Disable swipe on mobile menu (only works in Firefox, conflicts/breaks the Orbit slider there).
 
 # Internet Explorer
-- [ ] Fix the broken header wrapping.
+- [x] Fix the broken header wrapping.
 
 ---
 

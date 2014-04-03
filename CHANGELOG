@@ -8,3 +8,4 @@
 - fixed header link and shortened Agricultural to Ag
 - Fixed footer to be head nav consistent
 - Lowercased mobile header
+- Fixed search on IE; removed margin-top, added a <br>
