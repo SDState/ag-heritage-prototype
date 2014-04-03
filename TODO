@@ -1,12 +1,12 @@
 # General
 - [ ] Update mobile navigation text to match desktop.
-- [ ] Different heading colors on mobile and desktop.
-- [ ] Link mobile menu links to navigate site.
+- [x] Different heading colors on mobile and desktop.
+- [x] Link mobile menu links to navigate site.
 - [ ] Footer address font size discrepancy.
-- [ ] Drop mobile heading to "Ag" on secondary pages too.
+- [x] Drop mobile heading to "Ag" on secondary pages too.
 - [ ] Determine an aspect ratio for the Orbit images (bottom cutting off on mobile).
 - [ ] Top margin on small sizes of the footer (shouldn't be same as large size)
-- [ ] Add app.js to list of concatenated JavaScript files.
+- [x] Add app.js to list of concatenated JavaScript files.
 
 # Android
 ## generic browser
@@ -17,7 +17,7 @@
 - [ ] Disable swipe on mobile menu (only works in Firefox, conflicts/breaks the Orbit slider there).
 
 # Internet Explorer
-- [ ] Fix the broken header wrapping.
+- [x] Fix the broken header wrapping.
 
 ---
 
