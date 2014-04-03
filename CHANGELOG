@@ -5,3 +5,7 @@
 - link mobile menu links to secondary pages
 - match the footer navigation with the primary navigation (not all links from top are represented on the bottom)
 - break footer address header into two lines (insert a <br> between "SD" and "Ag...") 
+- fixed header link and shortened Agricultural to Ag
+- Fixed footer to be head nav consistent
+- Lowercased mobile header
+- Fixed search on IE; removed margin-top, added a <br>

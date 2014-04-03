@@ -91,7 +91,7 @@ form{
 
 	input{
 	top: 0px;
-	margin-top: 1.6rem;
+	margin-top: 0rem;
 	margin-right: 0px;
 	width: 148px;
 	height: 26px;
@@ -101,7 +101,7 @@ form{
 
 a.button {
 	top: 0px;
-	margin-top: 1.6rem;
+	margin-top: 0rem;
 	height: 26px;
 	&:hover,
 	&:focus {
@@ -146,7 +146,7 @@ a.button {
 
 // Navigation text styling
 #page-title,
-.title,
+// .title,
 #primary-navigation,
 #primary-navigation-mobile,
 .tab-bar .off-canvas-list {
@@ -185,9 +185,9 @@ a.button {
 
 ul.off-canvas-list li a {
 	color: $white;
-	&:hover {
-		background: $darkTan;
-	}
+	// &:hover {
+	// 	background: $darkTan;
+	// }
 }
 
 .orbit-bullets-container {
