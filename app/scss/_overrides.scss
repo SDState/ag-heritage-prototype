@@ -6,8 +6,8 @@
 // debolin trials
 
 #small-search input {
-width: 100%;
-height: 2.5rem;
+  width: 100%;
+  height: 2.5rem;
 }
 
 
@@ -32,10 +32,18 @@ height: 2.5rem;
 	form {
 		background-color: $black;
 	}
-	input[type="search"] {
+	// input[type="search"] {
+	input {
 		background-color: $lightGrey;
 		border: none;
+    border-top-left-radius: $agHeritageBorderRadius;
+    border-bottom-left-radius: $agHeritageBorderRadius;
+    padding-left: 1rem;
 	}
+  .button {
+    border-top-right-radius: $agHeritageBorderRadius;
+    border-bottom-right-radius: $agHeritageBorderRadius;
+  }
 }
 .top-bar-section #ag-heritage-seal {
 	height: 12rem;
@@ -56,6 +64,7 @@ height: 2.5rem;
 }
 #join-donate-contact {
 	background-color: $black;
+  margin-right: 1.66667rem;
 	// display: block;
 	//margin-bottom: 0.5rem;
 	li a {
@@ -83,8 +92,10 @@ overflow: hidden;
 }
 
 #search {
+  margin-right: 1.66667rem;
 	// color: $darkGrey;
 	// height: ($topbar-height / 2) !important;
+}
 
 form{
 
@@ -107,7 +118,7 @@ a.button {
 		background: $lightTan;
 	}
 }
-}
+// }
 
 
 #primary-navigation {
@@ -209,6 +220,7 @@ ul.off-canvas-list li a {
 #homepage-main-content {
 	background-color: $mediumGrey;
 	.panel {
+    border-radius: $agHeritageBorderRadius;
 		margin-top: 0.9375rem;
 	}
 	h1, h2, h3, h4, h5, h6 {
@@ -318,6 +330,8 @@ footer {
 #address {
 	background-color: $mediumGrey;
 	border: none;
+  border-top-left-radius: $agHeritageBorderRadius;
+  border-bottom-left-radius: $agHeritageBorderRadius;
 	color: $white;
 	margin-right: -1rem ; //-0.9375rem;
 	margin-bottom: 0;
