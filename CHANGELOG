@@ -13,3 +13,4 @@
 - More space between bottom of breadcrumbs and top of headings (doubled, at least, or back to default)
 - Increased Orbit rotation to 3 seconds -- see the JavaScript section in Foundation docs
 - Lined top of headers with top of social media buttons (the circle, not the icon inside it)
+- copyright to left
