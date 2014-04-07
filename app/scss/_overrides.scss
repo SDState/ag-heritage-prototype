@@ -3,6 +3,22 @@
 // CUSTOM OVERRIDES
 //
 
+// Set all headings to $darkGrey
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: $darkGrey;
+  }
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $darkGrey;
+// }
+
 // debolin trials
 
 #small-search input {
@@ -123,7 +139,7 @@ a.button {
 
 #primary-navigation {
 	background: $darkTan;
-	@include headingFont(13px, normal);
+	//@include headingFont();
 	text-align: center;
 	margin: 0 auto;
 	li {
@@ -184,7 +200,7 @@ a.button {
 
 .right-off-canvas-menu {
 	background: $black;
-	@include headingFont(13px);
+	// @include headingFont(13px);
 	label {
 		border-top: none !important;
 	}
@@ -231,6 +247,10 @@ ul.off-canvas-list li a {
 #main-content {
 	background-color: $mainContentColor;
 	color: $black;
+  h1 {
+    color: $black;
+    margin-top: o;
+  }
 }
 
 // .side-nav li a {
@@ -247,24 +267,24 @@ ul.off-canvas-list li a {
 //   }
 // }
 
-#main-content {
-	h1 {
-		@include headingFont(17pt);
-		margin-top: 0;
-	}
-	h2 {
-		@include headingFont(15pt);
-	}
-	h3 {
-		@include headingFont(13pt);
-	}
-	h4 {
-		@include headingFont(12pt);
-	}
-	h5 {
-		@include headingFont(12pt, italic);
-	}
-}
+// #main-content {
+// 	h1 {
+// 		// @include headingFont(17pt);
+// 		margin-top: 0;
+// 	}
+// 	h2 {
+// 		// @include headingFont(15pt);
+// 	}
+// 	h3 {
+// 		// @include headingFont(13pt);
+// 	}
+// 	h4 {
+// 		// @include headingFont(12pt);
+// 	}
+// 	h5 {
+// 		// @include headingFont(12pt, italic);
+// 	}
+// }
 
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
