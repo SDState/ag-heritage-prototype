@@ -59,6 +59,7 @@
   .button {
     border-top-right-radius: $agHeritageBorderRadius;
     border-bottom-right-radius: $agHeritageBorderRadius;
+	height: 24px;
   }
 }
 .top-bar-section #ag-heritage-seal {
@@ -206,6 +207,12 @@ a.button {
 	}
 	input[type="search"] {
 		margin: 0 0 0 0;
+	}
+	#small-search{
+	padding-top: 40px;
+	padding-left: 7px;
+	padding-bottom: 0px;
+	padding-right: 7px;
 	}
 }
 
