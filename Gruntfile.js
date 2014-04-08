@@ -63,17 +63,17 @@ module.exports = function( grunt ) {
       }
     },
 
-		concat: {
-			assets: {
-				src: [
-					// 'app/bower_components/jquery/dist/jquery.min.map',
-					'app/bower_components/jquery/dist/jquery.min.js',
-					'app/bower_components/foundation/js/foundation.min.js',
-					'app/js/app.js'
-				],
-				dest: 'build/js/main.js'
-			}
-		},
+		// concat: {
+		// 	assets: {
+		// 		src: [
+		// 			// 'app/bower_components/jquery/dist/jquery.min.map',
+		// 			'app/bower_components/jquery/dist/jquery.min.js',
+		// 			'app/bower_components/foundation/js/foundation.min.js',
+		// 			'app/js/app.js'
+		// 		],
+		// 		dest: 'build/js/main.js'
+		// 	}
+		// },
 
 		clean: ['build'],
 
@@ -84,31 +84,43 @@ module.exports = function( grunt ) {
 				src: 'img/*',
 				dest: 'build/'
 			},
-			// js: {
-			// 	expand: true,
-			// 	cwd: 'app',
-			// 	src: 'js/*',
-			// 	dest: 'build/'
-			// },
 			modernizr: {
 				expand: true,
 				cwd: 'app/bower_components/modernizr',
-				src: [
-					'modernizr.js'
+				src: 'modernizr.js',
 			// 		'jquery/dist/jquery.min.js',
 			// 		'foundation/js/foundation.min.js'
-				],
+				// ],
 				dest: 'build/js/'
 			},
 			jQuery: {
 				expand: true,
 				cwd: 'app/bower_components/jquery/dist',
 				src: [
+					'jquery.js',
+					'jquery.min.js',
 					'jquery.min.map'
+				],
+					// 'jquery.min.map'
 			// 		'jquery/dist/jquery.min.js',
 			// 		'foundation/js/foundation.min.js'
-				],
+			// 			'app/bower_components/jquery/dist/jquery.min.js',
+			// 			'app/bower_components/foundation/js/foundation.min.js',
+			// 			'app/js/app.js'
+				// ],
 				dest: 'build/js/'
+			},
+			foundation: {
+				expand: true,
+				cwd: 'app/bower_components/foundation/js',
+				src: 'foundation.min.js',
+				dest: 'build/js'
+			},
+			app: {
+				expand: true,
+				cwd: 'app/js',
+				src: 'app.js',
+				dest: 'build/js'
 			}
 		},
 
@@ -140,7 +152,8 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-build-control' );
 
   // Default task to be run.
-  grunt.registerTask( 'default', ['clean', 'copy', 'concat', 'sass', 'assemble'] );
+  // grunt.registerTask( 'default', ['clean', 'copy', 'concat', 'sass', 'assemble'] );
+  grunt.registerTask( 'default', ['clean', 'copy', 'sass', 'assemble'] );
 	// grunt.registerTask( 'preview', ['connect:client', 'watch:client']);
 	grunt.registerTask( 'server', ['default', 'connect', 'open', 'watch'] );
 	grunt.registerTask( 'serve', ['server'] );
