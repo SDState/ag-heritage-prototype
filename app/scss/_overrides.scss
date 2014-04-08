@@ -140,7 +140,7 @@ a.button {
 
 #primary-navigation {
 	background: $darkTan;
-	//@include headingFont();
+	@include headingFont();
 	text-align: center;
 	margin: 0 auto;
 	li {
@@ -155,7 +155,11 @@ a.button {
 		}
 		a {
 			color: $white;
+      font-size: 0.875rem;
+      // font-size: 0.75rem;
+      // font-weight: bold;
 			padding: 0.5rem 3px;
+			// padding: 0.5rem 0;
 			&:before {
 //				color: $white;
 				// content: '| ';
@@ -189,7 +193,7 @@ a.button {
 	box-sizing: content-box;
 	// padding-bottom: 0.5rem;
 	h1.title {
-	line-height: 1.8rem;
+	line-height: 1.35rem;
 	font-weight: normal;
 	//	padding-left: 0.5rem;
 	//	padding-top: 0.125rem;
@@ -459,10 +463,13 @@ footer {
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
 	#primary-navigation {
+    li:first-child {
+      margin-left: 3.75rem; // 60px / 3.75rem
+    }
 		li, a {
 			// padding: inherit 0.5rem;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
+			padding-left: 0.25rem;
+			padding-right: 0.25rem;
 		}
 	}
 	.main-section,
