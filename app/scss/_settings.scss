@@ -1,32 +1,37 @@
 // COLORS
-$white:       #ffffff;
-$lightTan:    #d5bb84;
-$darkTan:     #b6985a;
-$lightGrey:   #cfcec7;
-$mediumGrey:  #a2a297;
-$darkGrey:    #727265;
-$black:       #4e4e42;
-$superblack:  #000000;
-$mainContentColor: #f3f3f1;
-$leftNavigationBackgroundColor:
-              #87877c;
+$blackLight: #333333; // <= body copy
+$blackDark:  #000000;
+$greenLight: #87877c;
+$greenDark:  #4e4e42;
+$greyLight:  #cfcec7;
+$greyMedium: #a2a297;
+$greyDark:   #727265;
+$goldLight:  #d5bb84;
+$goldDark:   #b6985a;
+$whiteLight: #ffffff;
+$whiteDark:  #f3f3f1;
 
-// FONTS
-//$bodyFonts: 'Helvetica Neue', Helvetica, Arial, sans serif;
-//$headingFonts: 'Noto Serif', serif;
-//@mixin fonts($stack: $bodyFonts, $size: 12pt) {
-//	font: bold;
-//}
-//@mixin bodyFonts($size: 12pt) {
-// $bodyFont: 12px 'Helvetica Neue', Helvetica, Arial, sans serif;
-//}
+// ------------------
+
+// $white:       #ffffff;
+// $lightTan:    #d5bb84;
+// $darkTan:     #b6985a;
+// $lightGrey:   #cfcec7;
+// $mediumGrey:  #a2a297;
+// $darkGrey:    #727265;
+// $black:       #4e4e42;
+// $superblack:  #000000;
+// $mainContentColor: #f3f3f1;
+// $leftNavigationBackgroundColor: #87877c;
+// $bodyCopy: #333;
+
+
+// OTHER
+$agHeritageBorderRadius: 5px;
+
 @mixin headingFont() {
   font-family: "'Noto Serif', serif";
 }
-
-// BORDER RADIUS
-$agHeritageBorderRadius: 5px;
-
 
 //
 // FOUNDATION SETTINGS
@@ -68,8 +73,8 @@ $agHeritageBorderRadius: 5px;
 // $total-columns: 12;
 
 // We use these to control various global styles
- $body-bg: $lightGrey;
- $body-font-color: $superblack;
+ $body-bg: $greyLight;
+ $body-font-color: $blackDark;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -84,10 +89,10 @@ $agHeritageBorderRadius: 5px;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
- $primary-color: $darkTan;
+ $primary-color: $goldDark;
  // $primary-color: $black;
 // $secondary-color: #e7e7e7;
-$secondary-color: $lightTan;
+$secondary-color: $goldLight;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -157,7 +162,7 @@ $medium-range: (42.063em, 64em);
 // $header-font-weight: 300;
 $header-font-weight: bold;
 // $header-font-style: normal;
-$header-font-color: $darkTan;
+$header-font-color: $goldDark;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -203,7 +208,7 @@ $header-top-margin: .5rem;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
- $anchor-font-color: $darkTan;
+ $anchor-font-color: $goldDark;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -327,7 +332,7 @@ $header-top-margin: .5rem;
 
 // We use this to set the background color for the breadcrumb container.
 // $crumb-bg: scale-color($secondary-color, $lightness: 55%);
- $crumb-bg: $mainContentColor;
+ $crumb-bg: $whiteDark;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
@@ -683,11 +688,11 @@ $crumb-inline-list-margin-bottom: 0;
 // Off-canvas
 
 // $tabbar-bg: #333;
- $tabbar-bg: $black;
+ $tabbar-bg: $greenDark;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #FFF;
-$tabbar-color: $black;
+$tabbar-color: $greenDark;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
@@ -706,16 +711,16 @@ $tabbar-color: $black;
 // Off Canvas Menu Variables
 // $off-canvas-width: 250px;
 // $off-canvas-bg: #333;
-$off-canvas-bg: $darkTan;
+$off-canvas-bg: $goldDark;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
 // $off-canvas-label-color: #999;
-$off-canvas-label-color: $lightTan;
+$off-canvas-label-color: $goldLight;
 // $off-canvas-label-text-transform: uppercase;
 // $off-canvas-label-font-weight: bold;
 // $off-canvas-label-bg: #444;
-$off-canvas-label-bg: $lightTan;
+$off-canvas-label-bg: $goldLight;
 // $off-canvas-label-border-top: 1px solid scale-color(#444, $lightness: 14%);
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
@@ -765,7 +770,7 @@ $off-canvas-link-border-bottom: none;
 // $orbit-nav-bg: none;
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
 // $orbit-nav-arrow-color: #fff;
-$orbit-nav-arrow-color: $white;
+$orbit-nav-arrow-color: $whiteDark;
 // $orbit-nav-arrow-color-hover: #fff;
 
 // We use these to control the timer styles
@@ -774,9 +779,9 @@ $orbit-nav-arrow-color: $white;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: #ccc;
- $orbit-bullet-nav-color: $lightGrey;
+ $orbit-bullet-nav-color: $greyLight;
 // $orbit-bullet-nav-color-active: #999;
- $orbit-bullet-nav-color-active: $white;
+ $orbit-bullet-nav-color-active: $whiteDark;
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
@@ -826,7 +831,7 @@ $orbit-nav-arrow-color: $white;
 
 // We use these to control the background and border styles
 // $panel-bg: scale-color(#fff, $lightness: -5%);
- $panel-bg: $mainContentColor;
+ $panel-bg: $whiteDark;
 // $panel-border-style: solid;
  $panel-border-style: none;
 // $panel-border-size: 1px;
@@ -967,11 +972,11 @@ $side-nav-padding: rem-calc(0 0);
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
-$side-nav-link-color: $superblack;
+$side-nav-link-color: $blackDark;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
-$side-nav-link-color-active: $black;
+$side-nav-link-color-active: $greenDark;
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
-$side-nav-link-color-hover: $black;
+$side-nav-link-color-hover: $greenDark;
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;
@@ -1193,7 +1198,7 @@ $side-nav-link-color-hover: $black;
 
 // Background color for the top bar
 // $topbar-bg-color: #333;
- $topbar-bg-color: $black;
+ $topbar-bg-color: $greenDark;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

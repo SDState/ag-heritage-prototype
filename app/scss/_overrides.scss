@@ -3,23 +3,25 @@
 // CUSTOM OVERRIDES
 //
 
-// Set all headings to $darkGrey
+// Set all headings to $greyDark
 @for $i from 1 through 6 {
   h#{$i} {
-    color: $darkGrey;
+    color: $greyDark;
   }
 }
-
 // h1,
 // h2,
 // h3,
 // h4,
 // h5,
 // h6 {
-//   color: $darkGrey;
+//   color: $greyDark;
 // }
 
-// debolin trials
+
+// {
+//   color: $whiteDark;
+// }
 
 #small-search input {
   width: 100%;
@@ -35,22 +37,22 @@
 //no
 // Navigation (Medium and Up)
 .top-bar {
-	color: $white;
+	color: $whiteDark;
 	height: 90px;
 	section {
 		// overflow: visible;
 		height: 90px;
 	}
 	section ul {
-		background: $black;
+		background: $greenDark;
 		display: block;
 	}
 	form {
-		background-color: $black;
+		background-color: $greenDark;
 	}
 	// input[type="search"] {
 	input {
-		background-color: $lightGrey;
+		background-color: $greyLight;
 		border: none;
     border-top-left-radius: $agHeritageBorderRadius;
     border-bottom-left-radius: $agHeritageBorderRadius;
@@ -68,24 +70,38 @@
 	position: relative;
 	z-index: 1;
 }
+.top-bar .name h1 a {
+  color: $whiteDark;
+  &:hover,
+  &:focus {
+    color: $greyLight;
+  }
+}
 #page-title-medium-up {
-	font-color: $lightTan;
+	// color: $whiteDark;
 	padding-top: 1rem;
 	a {
-//		color: $lightGrey;
+//		color: $greyLight;
 		line-height: 30px;
 		&:hover {
-			background: $black;
+			background: $greenDark;
 		}
 	}
 }
 #join-donate-contact {
-	background-color: $black;
+  height: 45px;
+  overflow: hidden;
+	// background-color: $whiteDark;
   margin-right: 1.66667rem;
 	// display: block;
 	//margin-bottom: 0.5rem;
 	li a {
-		background-color: $mediumGrey;
+		background-color: $whiteDark;
+    color: $blackLight;
+    &:hover,
+    &:focus {
+      color: $greyDark;
+    }
 	}
 	li:not(.has-form) a:not(.button) {
 		line-height: 2rem;
@@ -101,29 +117,24 @@
 		border-bottom-right-radius: $agHeritageBorderRadius;
 	}
 }
-#join-donate-contact
-{
-height: 45px;
-
-overflow: hidden;
-}
-
 #search {
   margin-right: 1.66667rem;
-	// color: $darkGrey;
+	// color: $greyDark;
 	// height: ($topbar-height / 2) !important;
 }
+.top-bar input {
+  background-color: $whiteDark;
+  // color: $greyMedium;
+}
 
-form{
-
-	input{
-	top: 0px;
-	margin-top: 0rem;
-	margin-right: 0px;
-	width: 148px;
-	height: 26px;
-	}
-
+form {
+  input {
+    top: 0px;
+    margin-top: 0rem;
+    margin-right: 0px;
+    width: 148px;
+    height: 26px;
+  }
 }
 
 a.button {
@@ -132,15 +143,17 @@ a.button {
 	height: 26px;
 	&:hover,
 	&:focus {
-		background: $lightTan;
+		background: $goldLight !important;
 	}
 }
 // }
 
 
 #primary-navigation {
-	background: $darkTan;
 	@include headingFont();
+	background: $whiteDark;
+  border-top: 6px solid $goldDark;
+  border-bottom: 3px solid $goldLight;
 	text-align: center;
 	margin: 0 auto;
 	li {
@@ -148,20 +161,20 @@ a.button {
 		padding: 0.5rem 0;
 		&:hover,
 		&:focus {
-			background: $lightTan;
+			background: $goldLight;
 		}
 		&:before {
 			// content: '|';
 		}
 		a {
-			color: $white;
+			color: $blackLight;
       font-size: 0.875rem;
       // font-size: 0.75rem;
       // font-weight: bold;
 			padding: 0.5rem 3px;
 			// padding: 0.5rem 0;
 			&:before {
-//				color: $white;
+//				color: $whiteDark;
 				// content: '| ';
 			}
 			&:hover,
@@ -172,7 +185,7 @@ a.button {
 	}
 }
 #primary-nav-wrapper {
-	background: $darkTan;
+	background: $goldDark;
 }
 
 // Navigation text styling
@@ -181,7 +194,7 @@ a.button {
 #primary-navigation,
 #primary-navigation-mobile,
 .tab-bar .off-canvas-list {
-	text-transform:uppercase;
+	text-transform: uppercase;
 }
 
 // Navigation (Small and Medium)
@@ -189,7 +202,7 @@ a.button {
 //	height: $tabbar-height - 0.25rem;
 //}
 .tab-bar {
-	border-bottom: 0.25rem solid $darkTan;
+	border-bottom: 0.25rem solid $goldDark;
 	box-sizing: content-box;
 	// padding-bottom: 0.5rem;
 	h1.title {
@@ -199,12 +212,12 @@ a.button {
 	//	padding-top: 0.125rem;
 	}
 	a {
-		color: $white;
+		color: $whiteDark;
 	}
 }
 
 .right-off-canvas-menu {
-	background: $black;
+	background: $greenDark;
 	// @include headingFont(13px);
 	label {
 		border-top: none !important;
@@ -221,9 +234,9 @@ a.button {
 }
 
 ul.off-canvas-list li a {
-	color: $white;
+	color: $whiteDark;
 	// &:hover {
-	// 	background: $darkTan;
+	// 	background: $goldDark;
 	// }
 }
 
@@ -245,29 +258,29 @@ ul.off-canvas-list li a {
 }
 
 #homepage-main-content {
-	background-color: $mediumGrey;
+	background-color: $greyMedium;
 	.panel {
     border-radius: $agHeritageBorderRadius;
 		margin-top: 0.9375rem;
 	}
 	h1, h2, h3, h4, h5, h6 {
-		color: $darkTan;
+		color: $goldDark;
 	}
 }
 
 #main-content {
-	background-color: $mainContentColor;
-	color: $black;
+	background-color: $whiteDark;
+	color: $greenDark;
   h1 {
-    color: $black;
+    color: $greenDark;
     margin-top: o;
   }
 }
 
 // .side-nav li a {
-// 	color: $superblack;
+// 	color: $greenDark;
 // 	&:hover {
-// 		color: $black;
+// 		color: $greenDark;
 // 	}
 // }
 
@@ -298,81 +311,66 @@ ul.off-canvas-list li a {
 // }
 
 #left-navigation {
-	background-color: $leftNavigationBackgroundColor;
+	background-color: $greenLight;
   padding-top: 0.9375rem;
 }
 
 #footer-wrapper {
-	background-color: $mediumGrey;
+	background-color: $greyMedium;
 }
 footer {
-	background-color: $black;
-	h4:first-child {
-		margin-top: 1.3rem;
-	}
-	.columns, .panel {
-//		border: none;
-	}
-
-	h4 {
-		color: $lightGrey;
-		margin-top: 1.5rem;
-		margin-bottom: 0.1rem;
-		font-size : 1.4rem;
-		text-transform : uppercase;
-	   }
-
-	.columns {
-		border: none;
-		padding-right: 0;
-		// margin-right: -1rem;
-	}
-
-	// h4,
-	// a {
-	// 	color: $lightGrey;
-	// }
-	// a:hover,
-	// a:focus {
-	// 	color: $white;
-	// }
-
-	.side-nav li {
-		margin: 0;
-		padding: 0.25rem inherit;
-		line-height: 1.1;
-		a:not(.button)  {
-			color: $lightGrey;
-		}
-		a:hover,
-		a:focus {
-			color: $white !important;
-		}
-	}
-
-	// .side-nav li a:not(.button)  {
-	// 	color: $lightGrey;
-	// }
-
+  background-color: $greenDark;
+  a {
+    color: $whiteDark;
+    &:hover,
+    &:focus {
+      color: $greyLight;
+    }
+  }
+  h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    &:first-child {
+      margin-top: 1.3rem;
+    }
+  }
+  .columns {
+    border: none;
+    padding-right: 0;
+  }
+  .side-nav li {
+    margin: 0;
+    padding: 0.25rem inherit;
+    line-height: 1.1;
+    a:not(.button)  {
+      color: $whiteDark;
+      &:hover,
+      &:focus {
+        color: $greyLight;
+      }
+    }
+  }
 }
-
 #address {
-	background-color: $mediumGrey;
-	border: none;
+  background-color: $whiteDark;
+  border: none;
   border-top-left-radius: $agHeritageBorderRadius;
   border-bottom-left-radius: $agHeritageBorderRadius;
-	color: $white;
-	margin-right: -1rem ; //-0.9375rem;
-	margin-bottom: 0;
-		padding: 0.50rem inherit;
-		line-height: 1.4;
-//	z-index: 1000;
-	width: 100%;
-	a,
-	a:focus,
-	a:hover {
-		color: $white !important;
-	}
+  color: $blackLight;
+  margin-right: -1rem ; //-0.9375rem;
+  margin-bottom: 0;
+  padding: 0.50rem inherit;
+  line-height: 1.4;
+  width: 100%;
+  a {
+    color: $blackLight;
+    &:hover,
+    &:focus {
+      color: $greyDark;
+    }
+  }
 }
 
 #social-media-icons {
@@ -381,27 +379,18 @@ footer {
 		// float: right;
 	}
 }
-
-
 #state-info {
-
-
-	color: $white;
+	color: $whiteDark;
 	margin-top: 1rem;
 	margin-bottom: 0;
-		padding: 0.50rem inherit;
-		line-height: 1.4;
+	padding: 0.5rem inherit;
+	// line-height: 1.4;
 	padding-right: 1rem;
-	a,
-	a:focus,
-	a:hover {
-		color: $white !important;
-	}
 	float: right;
-	.vcard{
+	.vcard {
 		border: none;
 	}
-	
+
 	#campanile
 	{
 	margin-top: -60px;
@@ -415,13 +404,13 @@ footer {
 	footer {
     .columns,
     .column {
-      // background: $mediumGrey;
+      // background: $greyMedium;
   		padding-left: 0;
   		padding-right: 0;
   	}
     #address,
     #copyright {
-      background: $mediumGrey;
+      background: $greyMedium;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       text-align: left;
@@ -471,8 +460,8 @@ footer {
 		text-align: right !important;
 	}
 	#copyright {
-		background: $black;
-		color: $lightGrey;
+		background: $greenDark;
+		color: $greyLight;
 	}
 }
 
