@@ -2,12 +2,12 @@
 - [x] Update mobile navigation text to match desktop.
 - [x] Different heading colors on mobile and desktop.
 - [x] Link mobile menu links to navigate site.
-- [ ] Footer address font size discrepancy.
+- [x] Footer address font size discrepancy.
 - [x] Drop mobile heading to "Ag" on secondary pages too.
 - [ ] Determine an aspect ratio for the Orbit images (bottom cutting off on mobile).
-- [ ] Top margin on small sizes of the footer (shouldn't be same as large size)
+- [x] Top margin on small sizes of the footer (shouldn't be same as large size)
 - [x] Add app.js to list of concatenated JavaScript files.
-- [ ] Footer contact info text loses its left spacing on mobile.
+- [x] Footer contact info text loses its left spacing on mobile.
 
 # Android
 ## generic browser
@@ -29,7 +29,7 @@
 
 # Questions
 - [x] Font icons, SVG, or spritesheet?
-- [ ] Where to include a logo/link back to SDSU?
+- [x] Where to include a logo/link back to SDSU?
 
 # Desktop Navigation
 - [x] Move margin/padding from LI to UL so second line wraps to match the first.
