@@ -18,14 +18,14 @@ $leftNavigationBackgroundColor:
 //	font: bold;
 //}
 //@mixin bodyFonts($size: 12pt) {
-$bodyFont: 12px 'Helvetica Neue', Helvetica, Arial, sans serif;
+// $bodyFont: 12px 'Helvetica Neue', Helvetica, Arial, sans serif;
 //}
-@mixin headingFont($size: 17pt, $weight: bold) {
-	font: $weight $size 'Noto Serif', serif;
+@mixin headingFont() {
+  font-family: "'Noto Serif', serif";
 }
 
 // BORDER RADIUS
-$agHeritageBorderRadius: 8px;
+$agHeritageBorderRadius: 5px;
 
 
 //
@@ -47,8 +47,8 @@ $agHeritageBorderRadius: 8px;
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 // $base-font-size: 100%;
-$base-font-size: 12px;
-$rem-base: $base-font-size;
+// $base-font-size: 14px;
+// $rem-base: $base-font-size;
 
 // The $base-line-height is 100% while $base-font-size is 150%
 // $base-line-height: 150%;
@@ -85,6 +85,7 @@ $rem-base: $base-font-size;
 // We use these as default colors throughout
 // $primary-color: #008CBA;
  $primary-color: $darkTan;
+ // $primary-color: $black;
 // $secondary-color: #e7e7e7;
 $secondary-color: $lightTan;
 // $alert-color: #f04124;
@@ -103,7 +104,9 @@ $secondary-color: $lightTan;
 // small 40 em
 // Media Query Ranges
 // $small-range: (0em, 40em);
+$small-range: (0em, 42em);
 // $medium-range: (40.063em, 64em);
+$medium-range: (42.063em, 64em);
 // $small-range: (0em, 40em);
 // $medium-range: (40.063em, 64em);
 // $large-range: (64.063em, 90em);

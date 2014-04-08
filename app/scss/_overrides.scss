@@ -3,6 +3,22 @@
 // CUSTOM OVERRIDES
 //
 
+// Set all headings to $darkGrey
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: $darkGrey;
+  }
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $darkGrey;
+// }
+
 // debolin trials
 
 #small-search input {
@@ -124,7 +140,7 @@ a.button {
 
 #primary-navigation {
 	background: $darkTan;
-	@include headingFont(13px, normal);
+	@include headingFont();
 	text-align: center;
 	margin: 0 auto;
 	li {
@@ -139,7 +155,11 @@ a.button {
 		}
 		a {
 			color: $white;
+      font-size: 0.875rem;
+      // font-size: 0.75rem;
+      // font-weight: bold;
 			padding: 0.5rem 3px;
+			// padding: 0.5rem 0;
 			&:before {
 //				color: $white;
 				// content: '| ';
@@ -173,7 +193,7 @@ a.button {
 	box-sizing: content-box;
 	// padding-bottom: 0.5rem;
 	h1.title {
-	line-height: 1.8rem;
+	line-height: 1.35rem;
 	font-weight: normal;
 	//	padding-left: 0.5rem;
 	//	padding-top: 0.125rem;
@@ -185,7 +205,7 @@ a.button {
 
 .right-off-canvas-menu {
 	background: $black;
-	@include headingFont(13px);
+	// @include headingFont(13px);
 	label {
 		border-top: none !important;
 	}
@@ -238,6 +258,10 @@ ul.off-canvas-list li a {
 #main-content {
 	background-color: $mainContentColor;
 	color: $black;
+  h1 {
+    color: $black;
+    margin-top: o;
+  }
 }
 
 // .side-nav li a {
@@ -254,24 +278,24 @@ ul.off-canvas-list li a {
 //   }
 // }
 
-#main-content {
-	h1 {
-		@include headingFont(17pt);
-		margin-top: 0;
-	}
-	h2 {
-		@include headingFont(15pt);
-	}
-	h3 {
-		@include headingFont(13pt);
-	}
-	h4 {
-		@include headingFont(12pt);
-	}
-	h5 {
-		@include headingFont(12pt, italic);
-	}
-}
+// #main-content {
+// 	h1 {
+// 		// @include headingFont(17pt);
+// 		margin-top: 0;
+// 	}
+// 	h2 {
+// 		// @include headingFont(15pt);
+// 	}
+// 	h3 {
+// 		// @include headingFont(13pt);
+// 	}
+// 	h4 {
+// 		// @include headingFont(12pt);
+// 	}
+// 	h5 {
+// 		// @include headingFont(12pt, italic);
+// 	}
+// }
 
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
@@ -456,10 +480,13 @@ footer {
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
 	#primary-navigation {
+    li:first-child {
+      margin-left: 3.75rem; // 60px / 3.75rem
+    }
 		li, a {
 			// padding: inherit 0.5rem;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
+			padding-left: 0.25rem;
+			padding-right: 0.25rem;
 		}
 	}
 	.main-section,
