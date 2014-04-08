@@ -3,6 +3,8 @@
 $(document).foundation({
   orbit: {
     timer_speed: 4500,
-    variable_height: true
+    slide_number: false,
+    // variable_height: true,
+    fluid: 'Aspect Ratio'
   }
 });

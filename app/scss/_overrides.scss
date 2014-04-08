@@ -299,7 +299,7 @@ ul.off-canvas-list li a {
 
 #left-navigation {
 	background-color: $leftNavigationBackgroundColor;
-	padding-top: 2.5rem;
+  padding-top: 0.9375rem;
 }
 
 #footer-wrapper {
@@ -503,4 +503,7 @@ footer {
 			padding-right: 1.25rem;
 		}
 	}
+  #left-navigation {
+    padding-top: 4rem;
+  }
 }

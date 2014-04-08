@@ -66,6 +66,7 @@ module.exports = function( grunt ) {
 		concat: {
 			assets: {
 				src: [
+					// 'app/bower_components/jquery/dist/jquery.min.map',
 					'app/bower_components/jquery/dist/jquery.min.js',
 					'app/bower_components/foundation/js/foundation.min.js',
 					'app/js/app.js'
@@ -89,11 +90,21 @@ module.exports = function( grunt ) {
 			// 	src: 'js/*',
 			// 	dest: 'build/'
 			// },
-			assets: {
+			modernizr: {
 				expand: true,
 				cwd: 'app/bower_components/modernizr',
 				src: [
 					'modernizr.js'
+			// 		'jquery/dist/jquery.min.js',
+			// 		'foundation/js/foundation.min.js'
+				],
+				dest: 'build/js/'
+			},
+			jQuery: {
+				expand: true,
+				cwd: 'app/bower_components/jquery/dist',
+				src: [
+					'jquery.min.map'
 			// 		'jquery/dist/jquery.min.js',
 			// 		'foundation/js/foundation.min.js'
 				],
