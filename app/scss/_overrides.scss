@@ -18,10 +18,16 @@
 //   color: $greyDark;
 // }
 
-
-// {
-//   color: $whiteDark;
-// }
+@mixin tinted-image {
+  background:
+    // $greyMedium: #a2a297;
+    linear-gradient(
+      rgba(162, 162, 151, 0.45),
+      rgba(162, 162, 151, 0.45)
+    ),
+    /* bottom, image */
+    url('../img/bg__2x.png');
+}
 
 #small-search input {
   width: 100%;
@@ -480,11 +486,14 @@ footer {
 			padding-right: 0.25rem;
 		}
 	}
-	.main-section,
+	.main-section {
+    background: transparent url('../img/bg__2x.png');
+    // @include tinted-image();
+  }
 	.main-section > .row {
-//		clear: both;
-//		z-index: -1;
-	//	position:relative;
+    // background: black; //url('../img/bg__2x.png');
+    // background: black url('/images/grad14-header.jpg') 0 0 no-repeat;
+    // background: transparent url('/images/sdlogo.png') 0 0 no-repeat;
 	}
 
 	#homepage-main-content .columns {
@@ -496,5 +505,8 @@ footer {
 	}
   #left-navigation {
     padding-top: 4rem;
+  }
+  #footer-wrapper {
+    @include tinted-image();
   }
 }
