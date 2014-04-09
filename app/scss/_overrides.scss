@@ -74,7 +74,8 @@
   color: $whiteDark;
   &:hover,
   &:focus {
-    color: $greyLight;
+    // color: $greyLight;
+    color: $whiteLight;
   }
 }
 #page-title-medium-up {
@@ -161,7 +162,8 @@ a.button {
 		padding: 0.5rem 0;
 		&:hover,
 		&:focus {
-			background: $goldLight;
+			// background: $goldLight;
+			background: $whiteLight;
 		}
 		&:before {
 			// content: '|';
