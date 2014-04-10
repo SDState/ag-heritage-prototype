@@ -18,10 +18,16 @@
 //   color: $greyDark;
 // }
 
-
-// {
-//   color: $whiteDark;
-// }
+@mixin tinted-image {
+  background:
+    // $greyMedium: #a2a297;
+    linear-gradient(
+      rgba(162, 162, 151, 0.45),
+      rgba(162, 162, 151, 0.45)
+    ),
+    /* bottom, image */
+    url('../img/bg__2x.png');
+}
 
 #small-search input {
   width: 100%;
@@ -83,6 +89,8 @@
 	padding-top: 1rem;
 	a {
 //		color: $greyLight;
+    font-size: 18px;
+    font-weight: bold;
 		line-height: 30px;
 		&:hover {
 			background: $greenDark;
@@ -209,7 +217,7 @@ a.button {
 	// padding-bottom: 0.5rem;
 	h1.title {
 	line-height: 1.35rem;
-	font-weight: normal;
+	// font-weight: normal;
 	//	padding-left: 0.5rem;
 	//	padding-top: 0.125rem;
 	}
@@ -471,6 +479,11 @@ footer {
 // Large-sized screens and up
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
+  #page-title-medium-up {
+    a {
+      font-size: 24px;
+    }
+  }
 	#primary-navigation {
     li:first-child {
       margin-left: 3.75rem; // 60px / 3.75rem
@@ -481,11 +494,14 @@ footer {
 			padding-right: 0.25rem;
 		}
 	}
-	.main-section,
+	.main-section {
+    background: transparent url('../img/bg__2x.png');
+    // @include tinted-image();
+  }
 	.main-section > .row {
-//		clear: both;
-//		z-index: -1;
-	//	position:relative;
+    // background: black; //url('../img/bg__2x.png');
+    // background: black url('/images/grad14-header.jpg') 0 0 no-repeat;
+    // background: transparent url('/images/sdlogo.png') 0 0 no-repeat;
 	}
 
 	#homepage-main-content .columns {
@@ -497,5 +513,8 @@ footer {
 	}
   #left-navigation {
     padding-top: 4rem;
+  }
+  #footer-wrapper {
+    @include tinted-image();
   }
 }
