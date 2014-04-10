@@ -394,13 +394,22 @@ footer {
 	margin-top: 1rem;
 	margin-bottom: 0;
 	padding: 0.5rem inherit;
-	padding-left: 50px;
-	margin-left: 1rem;
-	line-height: 1rem;
+	padding-left: 2.5rem;
+
 
 	background: url('/img/sdsu.png') no-repeat;
-	background-size: 48px 100px ;
+	background-size: contain;
 	background-position: left center;
+	height: 8.5rem;
+
+	li{
+	padding-left: 20px;
+	line-height: 1;
+	.fn{
+	padding-bottom: 5px;
+	
+	}
+	}
 	
 	.vcard {
 		border: none;	
