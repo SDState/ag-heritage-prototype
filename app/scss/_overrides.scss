@@ -89,6 +89,8 @@
 	padding-top: 1rem;
 	a {
 //		color: $greyLight;
+    font-size: 18px;
+    font-weight: bold;
 		line-height: 30px;
 		&:hover {
 			background: $greenDark;
@@ -215,7 +217,7 @@ a.button {
 	// padding-bottom: 0.5rem;
 	h1.title {
 	line-height: 1.35rem;
-	font-weight: normal;
+	// font-weight: normal;
 	//	padding-left: 0.5rem;
 	//	padding-top: 0.125rem;
 	}
@@ -476,6 +478,11 @@ footer {
 // Large-sized screens and up
 @media #{$screen} and (min-width:#{lower-bound($large-range)})
 {
+  #page-title-medium-up {
+    a {
+      font-size: 24px;
+    }
+  }
 	#primary-navigation {
     li:first-child {
       margin-left: 3.75rem; // 60px / 3.75rem
