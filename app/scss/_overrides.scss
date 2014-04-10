@@ -386,17 +386,18 @@ footer {
 	margin-top: 1rem;
 	margin-bottom: 0;
 	padding: 0.5rem inherit;
-	// line-height: 1.4;
-	padding-right: 1rem;
-	float: right;
+	padding-left: 50px;
+	margin-left: 1rem;
+	line-height: 1rem;
+
+	background: url('/img/sdsu.png') no-repeat;
+	background-size: 48px 100px ;
+	background-position: left center;
+	
 	.vcard {
-		border: none;
+		border: none;	
 	}
 
-	#campanile
-	{
-	margin-top: -60px;
-	}
 }
 
 
