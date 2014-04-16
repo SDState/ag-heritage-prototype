@@ -29,10 +29,7 @@
     url('../img/bg__2x.png');
 }
 
-#small-search input {
-  width: 100%;
-  height: 2.5rem;
-}
+
 
 
  ul.breadcrumbs {
@@ -232,15 +229,38 @@ a.button {
 	label {
 		border-top: none !important;
 	}
-	input[type="search"] {
-		margin: 0 0 0 0;
+
+	
+	#small-search {
+	width: 100%;
+	padding-top:1.3rem;
+	padding-left: 0.75rem;
+	padding-right:0.75rem;
+	padding-bottom: 0;
+	input {
+	
+	margin: 0;
+
+	height: 2rem;
+	padding-left: 1rem;
+	width: 75%;
+	border-top-left-radius: $agHeritageBorderRadius;
+    border-bottom-left-radius: $agHeritageBorderRadius;
+  
 	}
-	#small-search{
-	padding-top: 40px;
-	padding-left: 7px;
-	padding-bottom: 0px;
-	padding-right: 7px;
-	}
+	#searchbutton{
+	margin:0;
+	height: 2rem;
+	margin-left: -4px;
+	width: 25%;
+
+	border-top-right-radius: $agHeritageBorderRadius;
+    border-bottom-right-radius: $agHeritageBorderRadius;
+
+
+}
+
+}
 }
 
 ul.off-canvas-list li a {
@@ -395,12 +415,14 @@ footer {
 	margin-bottom: 0;
 	padding: 0.5rem inherit;
 	padding-left: 2.5rem;
+	margin-left: 0.5rem;
+	margin-bottom: 0.5rem;
 
 
 	background: url('/img/sdsu.png') no-repeat;
 	background-size: contain;
 	background-position: left center;
-	height: 8.5rem;
+	height: 6.5rem;
 
 	li{
 	padding-left: 20px;
