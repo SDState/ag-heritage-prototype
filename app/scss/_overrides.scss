@@ -251,7 +251,7 @@ a.button {
 	#searchbutton{
 	margin:0;
 	height: 2rem;
-	margin-left: -4px;
+	margin-left: -5px;
 	width: 25%;
 
 	border-top-right-radius: $agHeritageBorderRadius;
@@ -338,6 +338,7 @@ ul.off-canvas-list li a {
 // 	h5 {
 // 		// @include headingFont(12pt, italic);
 // 	}
+
 // }
 
 #left-navigation {
@@ -348,24 +349,35 @@ ul.off-canvas-list li a {
 #footer-wrapper {
 	background-color: $greyMedium;
 }
+
 footer {
-  background-color: $greenDark;
-  a {
-    color: $whiteDark;
-    &:hover,
-    &:focus {
-      color: $greyLight;
-    }
-  }
+	overflow: hidden;
+	background-color: $greenDark;
+	a {
+		color: $whiteDark;
+		&:hover,
+		&:focus {
+			color: $greyLight;
+				}
+	  }
+
+
   h4, h5, h6 {
     margin-top: 1.5rem;
     margin-bottom: 0.1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+	overflow: hidden;
     &:first-child {
       margin-top: 1.3rem;
-    }
+	  }
+
+	}
+  h6 {
+	font-size: 
+  
   }
+
   .columns {
     border: none;
     padding-right: 0;
@@ -382,61 +394,59 @@ footer {
       }
     }
   }
-}
+
 #address {
-  background-color: $whiteDark;
-  border: none;
-  border-top-left-radius: $agHeritageBorderRadius;
-  border-bottom-left-radius: $agHeritageBorderRadius;
-  color: $blackLight;
-  margin-right: -1rem ; //-0.9375rem;
-  margin-bottom: 0;
-  padding: 0.50rem inherit;
-  line-height: 1.4;
-  width: 100%;
-  a {
-    color: $blackLight;
-    &:hover,
-    &:focus {
-      color: $greyDark;
-    }
-  }
-}
+	background-color: $whiteDark;
+	border: none;
+	border-top-left-radius: $agHeritageBorderRadius;
+	border-bottom-left-radius: $agHeritageBorderRadius;
+	color: $blackLight;
+	margin-bottom: 0;
+	padding: 0.50rem inherit;
+	padding-left: 0.50rem;
+	line-height: 1.4;
+	width: 100%;
+	a {
+		color: $blackLight;
+		&:hover,
+		&:focus {
+			color: $greyDark;
+				}
+	  }
+	}
+
 
 #social-media-icons {
 	margin: 1rem;
-	img {
-		// float: right;
-	}
+	width: 100%;
+	float:right;
 }
-#state-info {
+#state-info { 
 	color: $whiteDark;
+	
 	margin-top: 1rem;
-	margin-bottom: 0;
-	padding: 0.5rem inherit;
-	padding-left: 2.5rem;
 	margin-left: 0.5rem;
-	margin-bottom: 0.5rem;
-
-
+	margin-bottom: 1.25rem;
+	
+	padding: 0.5rem inherit;
+	
+	vertical-align: middle;
+	
 	background: url('/img/sdsu.png') no-repeat;
 	background-size: contain;
-	background-position: left center;
-	height: 6.5rem;
+	background-position: left-center;
+	
+	height: 7.0rem;
 
-	li{
-	padding-left: 20px;
-	line-height: 1;
-	.fn{
-	padding-bottom: 5px;
-	
-	}
-	}
-	
-	.vcard {
+	.vcard{
+		padding-left: 3.75rem;
 		border: none;	
+		line-height: 1;
+		.fn {
+			padding-bottom: 5px;
+		}
 	}
-
+	}
 }
 
 
@@ -450,8 +460,7 @@ footer {
   		padding-left: 0;
   		padding-right: 0;
   	}
-    #address,
-    #copyright {
+    #address {
       background: $greyMedium;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -459,8 +468,7 @@ footer {
     }
   }
 	#social-media-icons,
-  #address,
-  #copyright {
+  #address {
 		width: 100%;
     padding: 0.5rem;
 	}
