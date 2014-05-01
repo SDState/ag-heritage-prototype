@@ -3,6 +3,8 @@
 // CUSTOM OVERRIDES
 //
 
+@import "foundation-glyphicons";
+
 // Set all headings to $greyDark
 @for $i from 1 through 6 {
   h#{$i} {
