@@ -496,7 +496,7 @@ footer {
 		.fn {
 			padding-bottom: 5px;
 
-// <<<<<<< HEAD
+
 
 	#campanile
 	{
@@ -517,8 +517,14 @@ footer {
 // upgraded search button
 .gicon-search {
 	
-	margin-top:5px; 
-	margin-left:5px ;
+	margin-top:1px; 
+	//margin-left:5px ;
+	background-color: $goldDark;
+	border-top-right-radius: $agHeritageBorderRadius;
+	border-bottom-right-radius: $agHeritageBorderRadius;
+	height: 27px;
+	width: 27px;
+	
 }
 
 

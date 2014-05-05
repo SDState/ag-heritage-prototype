@@ -4,7 +4,7 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  vertical-align: text-top;
+  vertical-align: top;
   background-image: url(../img/glyphicons-halflings.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
@@ -22,8 +22,10 @@
 .gicon-music {
   background-position: -24px 0;
 }
+
+/* Edited the positioning to center the page. */
 .gicon-search {
-  background-position: -48px 0;
+  background-position: -42px 7px;
 }
 .gicon-envelope {
   background-position: -72px 0;
